@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - Muhammad Naeem</title>
+  <meta name="description" content="Learn about Muhammad Naeem, Junior Full-Stack Developer, his background, journey, and technical passions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <header class="nav-header">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-avatar">
+          <img src="Naeem.jfif" alt="Muhammad Naeem" />
+        </div>
+        <div class="brand-meta">
+          <h2>Muhammad Naeem</h2>
+          <span>Junior Full-Stack Developer</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-menu-link">Home</a></li>
+        <li><a href="about.html" class="nav-menu-link active">About</a></li>
+        <li><a href="skills.html" class="nav-menu-link">Skills</a></li>
+        <li><a href="projects.html" class="nav-menu-link">Projects</a></li>
+        <li><a href="services.html" class="nav-menu-link">Services</a></li>
+        <li><a href="testimonials.html" class="nav-menu-link">Reviews</a></li>
+        <li><a href="contact.html" class="nav-menu-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <div class="theme-switch-wrap" title="Select Theme: Black or White">
+          <button class="theme-mode-btn active" id="theme-btn-black" title="Black Theme">
+            <i class="fas fa-moon"></i> Black
+          </button>
+          <button class="theme-mode-btn" id="theme-btn-white" title="White Theme">
+            <i class="fas fa-sun"></i> White
+          </button>
+        </div>
+        <a href="hire-me.html" class="btn-hire">
+          <i class="fas fa-briefcase"></i> Hire Me
+        </a>
+        <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="section-badge"><i class="fas fa-user"></i> Personal Background & Profile</div>
+      <h1 class="page-title">About <em class="text-gradient-cyan">Muhammad Naeem</em></h1>
+      <p class="page-subtitle">Passionate Junior Full-Stack Developer dedicated to building performant web applications, clean component architectures, and responsive user experiences.</p>
+    </div>
+
+    <div class="about-grid">
+      <!-- Left: Profile Visual & Credentials Card -->
+      <div class="about-portrait-card">
+        <div class="about-avatar-frame">
+          <img src="Naeem.jfif" alt="Muhammad Naeem" />
+        </div>
+        <h3 style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 800; color: var(--text-heading);">Muhammad Naeem</h3>
+        <p style="font-size: 0.94rem; color: var(--c-cyan); font-weight: 700; margin-bottom: 1.2rem; font-family: var(--font-mono);">Junior Full-Stack Developer &bull; Kohat, KPK</p>
+        
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:contact@muhammadnaeem.dev" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/923000000000" target="_blank" class="social-btn" title="WhatsApp" style="color: #10B981 !important;"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; margin-top: 1.5rem; text-align: center;">
+          <div style="background: rgba(0, 242, 254, 0.06); padding: 0.85rem 0.4rem; border-radius: var(--radius-sm); border: 1px solid rgba(0, 242, 254, 0.25);">
+            <div style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; color: var(--c-cyan);">1+</div>
+            <div style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Years Exp</div>
+          </div>
+          <div style="background: rgba(139, 92, 246, 0.06); padding: 0.85rem 0.4rem; border-radius: var(--radius-sm); border: 1px solid rgba(139, 92, 246, 0.25);">
+            <div style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; color: #C084FC;">15+</div>
+            <div style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Projects</div>
+          </div>
+          <div style="background: rgba(16, 185, 129, 0.06); padding: 0.85rem 0.4rem; border-radius: var(--radius-sm); border: 1px solid rgba(16, 185, 129, 0.25);">
+            <div style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; color: #10B981;">99%</div>
+            <div style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Quality</div>
+          </div>
+        </div>
+
+        <div style="margin-top: 1.5rem;">
+          <a href="hire-me.html" class="btn-primary btn-block" style="width: 100%; justify-content: center;">
+            <i class="fas fa-file-arrow-down"></i> Download Resume / CV
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Biography & Mindset -->
+      <div class="about-content">
+        <p class="about-text-lead">
+          I craft fast, scalable, and responsive web applications with a focus on <strong class="text-gradient-cyan">clean code architecture</strong> and user-centered design.
+        </p>
+        <p class="about-text-desc">
+          Based in <strong>Kohat, KPK, Pakistan</strong>, I am a dedicated developer with a strong foundation in modern JavaScript, React.js, Node.js, Express, and database engineering (PostgreSQL & MongoDB). I enjoy solving real-world challenges—whether building multi-branch hostel ERPs, AI speech-to-text dictation engines, or interactive e-commerce platforms.
+        </p>
+        <p class="about-text-desc">
+          I believe that exceptional web development is the intersection of high visual aesthetics, robust server logic, and clean, readable code that teams can easily maintain and scale.
+        </p>
+
+        <div class="journey-box">
+          <div class="journey-title"><i class="fas fa-compass"></i> Development Mindset & Philosophy</div>
+          <p style="font-size: 0.94rem; color: var(--text-muted); line-height: 1.68;">
+            "Write code as if the next person maintaining it is a close colleague. Build for reliability, optimize for latency, and never stop refining your craft."
+          </p>
+        </div>
+
+        <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="projects.html" class="btn-primary"><i class="fas fa-briefcase"></i> Explore My Projects</a>
+          <a href="contact.html" class="btn-secondary"><i class="fas fa-paper-plane"></i> Let's Talk</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Developer Milestones Timeline -->
+    <div class="timeline-section">
+      <div class="page-header" style="margin-bottom: 2rem;">
+        <div class="section-badge"><i class="fas fa-route"></i> Career Milestones</div>
+        <h2 class="page-title" style="font-size: 2.2rem;">My Developer <em class="text-gradient-violet">Progression</em></h2>
+        <p class="page-subtitle">Key chapters in my software development journey and technical evolution.</p>
+      </div>
+
+      <div class="timeline-grid">
+        <div class="timeline-card">
+          <span class="timeline-year-tag">2024 &bull; Foundations</span>
+          <h3 class="timeline-title">Core Web Standards & Logic</h3>
+          <p class="timeline-desc">
+            Mastered HTML5 semantics, responsive CSS3 flexbox/grid layouts, algorithms, and vanilla JavaScript DOM manipulation with a strong focus on clean coding fundamentals.
+          </p>
+        </div>
+
+        <div class="timeline-card">
+          <span class="timeline-year-tag" style="border-color: var(--c-violet); color: #C084FC; background: rgba(139, 92, 246, 0.1);">2025 &bull; Full-Stack Growth</span>
+          <h3 class="timeline-title">React & Backend Architecture</h3>
+          <p class="timeline-desc">
+            Built modern SPAs with React.js, implemented RESTful APIs with Node.js and Express, integrated MongoDB and PostgreSQL databases, and learned JWT authentication.
+          </p>
+        </div>
+
+        <div class="timeline-card">
+          <span class="timeline-year-tag" style="border-color: var(--c-emerald); color: #10B981; background: rgba(16, 185, 129, 0.1);">2026 &bull; Production Systems</span>
+          <h3 class="timeline-title">Real-World Enterprise Systems</h3>
+          <p class="timeline-desc">
+            Architected full-scale management platforms, integrated browser Web Speech APIs for AI voice dictation, and deployed high-performance responsive web applications.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Engineering Pillars -->
+    <div class="timeline-section" style="margin-top: 3.5rem; padding-top: 3rem;">
+      <div class="page-header" style="margin-bottom: 2rem;">
+        <div class="section-badge"><i class="fas fa-shield-halved"></i> Engineering Principles</div>
+        <h2 class="page-title" style="font-size: 2.2rem;">How I <em class="text-gradient-emerald">Build Software</em></h2>
+        <p class="page-subtitle">The four guiding principles I follow on every codebase and client collaboration.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon" style="background: rgba(0, 242, 254, 0.12); color: var(--c-cyan); border-color: rgba(0, 242, 254, 0.35);"><i class="fas fa-cubes"></i></div>
+          <h3 class="pillar-title">Clean Modular Code</h3>
+          <p class="pillar-desc">DRY principles, modular component hierarchy, and meaningful variable names for painless long-term maintenance.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon"><i class="fas fa-gauge-high"></i></div>
+          <h3 class="pillar-title">Sub-Second Performance</h3>
+          <p class="pillar-desc">Lightweight asset pipelines, zero unnecessary bloat, and optimized rendering loops for fast initial load times.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon" style="background: rgba(16, 185, 129, 0.12); color: #10B981; border-color: rgba(16, 185, 129, 0.35);"><i class="fas fa-mobile-screen-button"></i></div>
+          <h3 class="pillar-title">Universal Responsive UX</h3>
+          <p class="pillar-desc">Pixel-perfect layouts that gracefully adapt from 320px mobile screens up to 4K ultra-wide monitors.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon" style="background: rgba(245, 158, 11, 0.12); color: #F59E0B; border-color: rgba(245, 158, 11, 0.35);"><i class="fas fa-user-check"></i></div>
+          <h3 class="pillar-title">Clear Collaboration</h3>
+          <p class="pillar-desc">Transparent communication, proactive status updates, Git branch management, and meeting deadlines reliably.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div style="text-align: center; margin-top: 3.5rem; padding: 2.5rem; background: var(--grad-card); border: 1px solid var(--border-card); border-radius: var(--radius-md);">
+      <h3 style="font-size: 1.6rem; font-weight: 800; color: var(--text-heading); margin-bottom: 0.8rem;">Interested in Working with Muhammad Naeem?</h3>
+      <p style="font-size: 1rem; color: var(--text-muted); margin-bottom: 1.5rem;">Explore my technical skills or get in touch directly to discuss projects and opportunities.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="skills.html" class="btn-primary"><i class="fas fa-code"></i> Explore Skills & Tech</a>
+        <a href="contact.html" class="btn-secondary"><i class="fas fa-envelope"></i> Contact Me</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-inner">
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="testimonials.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="hire-me.html">Hire Me</a></li>
+      </ul>
+      <p class="footer-copy">
+        Designed & Built for <strong>Muhammad Naeem</strong> &bull; Junior Full-Stack Developer &copy; 2026. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=cyber_advance"></script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hire Muhammad Naeem - Junior Full-Stack Developer</title>
+  <meta name="description"
+    content="Hire Muhammad Naeem for full-time junior full-stack developer positions, freelance web development, contract work, and custom frontend/backend solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Header Navigation -->
+  <header class="nav-header">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-avatar">
+          <img src="Naeem.jfif" alt="Muhammad Naeem" />
+        </div>
+        <div class="brand-meta">
+          <h2>Muhammad Naeem</h2>
+          <span>Junior Full-Stack Developer</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-menu-link">Home</a></li>
+        <li><a href="about.html" class="nav-menu-link">About</a></li>
+        <li><a href="skills.html" class="nav-menu-link">Skills</a></li>
+        <li><a href="projects.html" class="nav-menu-link">Projects</a></li>
+        <li><a href="services.html" class="nav-menu-link">Services</a></li>
+        <li><a href="testimonials.html" class="nav-menu-link">Reviews</a></li>
+        <li><a href="contact.html" class="nav-menu-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <div class="theme-switch-wrap" title="Select Theme: Black or White">
+          <button class="theme-mode-btn active" id="theme-btn-black" title="Black Theme">
+            <i class="fas fa-moon"></i> Black
+          </button>
+          <button class="theme-mode-btn" id="theme-btn-white" title="White Theme">
+            <i class="fas fa-sun"></i> White
+          </button>
+        </div>
+        <a href="hire-me.html" class="btn-hire">
+          <i class="fas fa-briefcase"></i> Hire Me
+        </a>
+        <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="section-badge"><i class="fas fa-briefcase"></i> Available For Opportunities</div>
+      <h1 class="page-title">Hire <em class="text-gradient-cyan">Muhammad Naeem</em></h1>
+      <p class="page-subtitle">Looking for an enthusiastic, fast-learning Junior Full-Stack Developer? I am available
+        for full-time employment, contract projects, and freelance engagements.</p>
+    </div>
+
+    <!-- Live Status Banner -->
+    <div class="hire-status-banner">
+      <div class="hire-status-info">
+        <span class="hire-pulse-dot"></span>
+        <div>
+          <div class="hire-status-title">Status: Ready to Join & Available Now</div>
+          <div class="hire-status-sub">Open for Full-Time (Remote / Hybrid) &bull; Freelance Projects &bull; Contract
+            Work</div>
+        </div>
+      </div>
+      <div>
+        <a href="#hire-form-section" class="btn-primary btn-sm">
+          <i class="fas fa-bolt"></i> Fast-Track Hire Inquiry
+        </a>
+      </div>
+    </div>
+
+    <!-- 3 Engagement Models -->
+    <div class="hire-models-grid">
+      <!-- Model 1: Full-Time -->
+      <div class="hire-model-card featured">
+        <div>
+          <div class="hire-model-icon" style="background: rgba(244,63,94,0.15); color: #FB7185;">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3 class="hire-model-title">Full-Time Role</h3>
+          <div class="hire-model-type">Junior Developer &bull; In-House / Remote</div>
+          <p class="hire-model-desc">
+            A dedicated team member who learns fast, takes ownership of frontend and backend tasks, and contributes
+            actively to company goals.
+          </p>
+          <ul class="hire-model-perks">
+            <li><i class="fas fa-check-circle"></i> 40 hours / week dedicated capacity</li>
+            <li><i class="fas fa-check-circle"></i> Immediate availability & onboarding</li>
+            <li><i class="fas fa-check-circle"></i> Daily standup & Agile sprint participation</li>
+            <li><i class="fas fa-check-circle"></i> Frontend (React/JS/CSS) & Backend (Node)</li>
+          </ul>
+        </div>
+        <a href="#hire-form-section" onclick="selectHireType('Full-Time Role')" class="btn-primary btn-block">
+          <i class="fas fa-user-plus"></i> Hire for Full-Time
+        </a>
+      </div>
+
+      <!-- Model 2: Project-Based -->
+      <div class="hire-model-card">
+        <div>
+          <div class="hire-model-icon" style="background: rgba(16,185,129,0.15); color: var(--accent-emerald);">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3 class="hire-model-title">Project Contract</h3>
+          <div class="hire-model-type">Fixed Scope &bull; Milestone Delivery</div>
+          <p class="hire-model-desc">
+            Complete turnkey websites, responsive portals, or web applications built according to your exact
+            specifications, delivered on schedule.
+          </p>
+          <ul class="hire-model-perks">
+            <li><i class="fas fa-check-circle"></i> Clear project scoping & transparent milestones</li>
+            <li><i class="fas fa-check-circle"></i> 100% responsive, fast-loading modern UI</li>
+            <li><i class="fas fa-check-circle"></i> Clean source code & full documentation</li>
+            <li><i class="fas fa-check-circle"></i> 30 days free bug-fixing & launch support</li>
+          </ul>
+        </div>
+        <a href="#hire-form-section" onclick="selectHireType('Project Contract')" class="btn-secondary btn-block">
+          <i class="fas fa-rocket"></i> Hire for Project
+        </a>
+      </div>
+
+      <!-- Model 3: Hourly / Consultation -->
+      <div class="hire-model-card">
+        <div>
+          <div class="hire-model-icon" style="background: rgba(0,242,254,0.15); color: var(--c-cyan);">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3 class="hire-model-title">Hourly & Support</h3>
+          <div class="hire-model-type">Flexible Hours &bull; On-Demand Tasks</div>
+          <p class="hire-model-desc">
+            Need quick feature additions, responsive bug fixes, CSS improvements, or API integrations? Pay only for the
+            exact hours spent.
+          </p>
+          <ul class="hire-model-perks">
+            <li><i class="fas fa-check-circle"></i> Flexible hours as per requirement</li>
+            <li><i class="fas fa-check-circle"></i> Quick turnaround for urgent fixes</li>
+            <li><i class="fas fa-check-circle"></i> Clear timesheet & commit tracking</li>
+            <li><i class="fas fa-check-circle"></i> Direct collaboration on Slack/Discord</li>
+          </ul>
+        </div>
+        <a href="#hire-form-section" onclick="selectHireType('Hourly / Support')" class="btn-secondary btn-block">
+          <i class="fas fa-stopwatch"></i> Hire Hourly
+        </a>
+      </div>
+    </div>
+
+    <!-- Confidence Guarantees -->
+    <div class="hire-guarantees-bar">
+      <div class="hire-guarantee-box">
+        <div class="hire-guarantee-icon"><i class="fas fa-shield-alt"></i></div>
+        <div>
+          <div class="hire-guarantee-title">Clean & Reliable Code</div>
+          <div class="hire-guarantee-text">Modular, semantic HTML5, modern CSS, and well-structured JavaScript.</div>
+        </div>
+      </div>
+      <div class="hire-guarantee-box">
+        <div class="hire-guarantee-icon" style="color: var(--accent-emerald);"><i class="fas fa-comments"></i></div>
+        <div>
+          <div class="hire-guarantee-title">Smooth Communication</div>
+          <div class="hire-guarantee-text">Regular progress updates, video demos, and responsive availability.</div>
+        </div>
+      </div>
+      <div class="hire-guarantee-box">
+        <div class="hire-guarantee-icon" style="color: #A855F7;"><i class="fas fa-bolt"></i></div>
+        <div>
+          <div class="hire-guarantee-title">Fast Delivery</div>
+          <div class="hire-guarantee-text">Focused execution and rapid turnarounds on agreed timeline milestones.</div>
+        </div>
+      </div>
+      <div class="hire-guarantee-box">
+        <div class="hire-guarantee-icon" style="color: #F43F5E;"><i class="fas fa-award"></i></div>
+        <div>
+          <div class="hire-guarantee-title">Satisfaction Guaranteed</div>
+          <div class="hire-guarantee-text">Dedicated to exceeding expectations and long-term professional relationships.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hire Inquiry Form Section -->
+    <div id="hire-form-section" class="contact-grid">
+      <!-- Direct Contact & Channels -->
+      <div class="contact-info-panel">
+        <h3 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; margin-bottom: 1.2rem;">Direct
+          Channels</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+          Prefer a direct conversation? Feel free to reach out directly via email or social platforms for immediate
+          response.
+        </p>
+
+        <div class="contact-channel">
+          <div class="channel-icon" style="background: rgba(244,63,94,0.15); color: #FB7185;"><i
+              class="fas fa-briefcase"></i></div>
+          <div>
+            <div class="channel-label">Job Inquiries</div>
+            <div class="channel-value"><a href="mailto:contact@muhammadnaeem.dev"
+                style="color: var(--accent-cyan);">contact@muhammadnaeem.dev</a></div>
+          </div>
+        </div>
+
+        <div class="contact-channel">
+          <div class="channel-icon" style="background: rgba(16,185,129,0.15); color: var(--accent-emerald);"><i
+              class="fab fa-whatsapp"></i></div>
+          <div>
+            <div class="channel-label">Instant Chat</div>
+            <div class="channel-value"><a href="https://wa.me/" target="_blank"
+                style="color: var(--accent-emerald);">Message on WhatsApp &rarr;</a></div>
+          </div>
+        </div>
+
+        <div class="contact-channel">
+          <div class="channel-icon" style="background: rgba(245,158,11,0.15); color: var(--accent-amber);"><i
+              class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div class="channel-label">Location & Address</div>
+            <div class="channel-value"><strong>Kohat</strong>, Khyber Pakhtunkhwa (KPK), Pakistan &bull; Remote
+              Worldwide</div>
+          </div>
+        </div>
+
+        <div class="contact-channel">
+          <div class="channel-icon" style="background: rgba(0,242,254,0.15); color: var(--c-cyan);"><i
+              class="fas fa-file-download"></i></div>
+          <div>
+            <div class="channel-label">Curriculum Vitae</div>
+            <div class="channel-value"><a href="#cv-download" onclick="downloadCV(event)"
+                style="color: var(--c-cyan); font-weight: 700;"><i class="fas fa-download"></i> Download Resume / CV</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.5rem; margin-top: 2rem;">
+          <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.8rem;">Developer Profiles</h4>
+          <div class="social-links" style="justify-content: flex-start;">
+            <a href="https://github.com" target="_blank" class="social-btn" title="GitHub"><i
+                class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-btn" title="LinkedIn"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:contact@muhammadnaeem.dev" class="social-btn" title="Email"><i
+                class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Hire Form -->
+      <div class="contact-form-panel">
+        <h3 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;">Hire
+          Me &bull; Project Inquiry</h3>
+        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1.5rem;">
+          Fill out this form and I will get back to you within 24 hours with a custom proposal or interview
+          availability.
+        </p>
+
+        <form id="portfolio-hire-form">
+          <div class="form-group">
+            <label class="form-label" for="hire-type">Engagement Type</label>
+            <select id="hire-type" class="form-input" style="background: var(--bg-body); color: var(--text-heading);"
+              required>
+              <option value="Full-Time Role">Full-Time Junior Full-Stack Developer</option>
+              <option value="Project Contract">Project-Based Contract (Turnkey Website/App)</option>
+              <option value="Hourly / Support">Hourly Freelance & Technical Maintenance</option>
+              <option value="Internship / Trainee">Junior Apprenticeship / Internship</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="hire-name">Your Name</label>
+            <input type="text" id="hire-name" class="form-input" placeholder="e.g. Sarah Jenkins" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="hire-company">Company / Organization (Optional)</label>
+            <input type="text" id="hire-company" class="form-input" placeholder="e.g. Apex Tech Solutions" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="hire-email">Work Email</label>
+            <input type="email" id="hire-email" class="form-input" placeholder="e.g. s.jenkins@apextech.com" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="hire-budget">Budget / Salary Range (Optional)</label>
+            <select id="hire-budget" class="form-input" style="background: var(--bg-body); color: var(--text-heading);">
+              <option value="Standard Rate">Standard Developer Rate</option>
+              <option value="PKR 25,000 - PKR 50,000">₨ 25,000 - ₨ 50,000 PKR (Quick Fix / Small Project)</option>
+              <option value="PKR 50,000 - PKR 150,000">₨ 50,000 - ₨ 150,000 PKR (Standard Website / App)</option>
+              <option value="PKR 150,000 - PKR 350,000">₨ 150,000 - ₨ 350,000 PKR (Full-Scale Custom Solution)</option>
+              <option value="PKR 80,000+ / Month">₨ 80,000+ / Month PKR (Full-Time Monthly Salary)</option>
+              <option value="Under $500">&lt; $500 USD (International Small Project)</option>
+              <option value="$500 - $1,500">$500 - $1,500 USD (Standard Website / App)</option>
+              <option value="$1,500 - $3,000">$1,500 - $3,000 USD (Full-Scale Custom Solution)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="hire-details">Role or Project Description</label>
+            <textarea id="hire-details" class="form-textarea"
+              placeholder="Describe the job opening, tech stack requirements, project scope, or timeline..." rows="4"
+              required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary btn-block">
+            <i class="fas fa-paper-plane"></i> Submit Hire Request
+          </button>
+        </form>
+      </div>
+    </div>
+
+
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="main-footer">
+    <div class="footer-inner">
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="testimonials.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="hire-me.html">Hire Me</a></li>
+      </ul>
+      <p class="footer-copy">
+        Designed & Built for <strong>Muhammad Naeem</strong> &bull; Junior Full-Stack Developer &bull; Kohat, KPK,
+        Pakistan &copy; 2026. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=cyber_advance"></script>
+  <script>
+    function selectHireType(type) {
+      const select = document.getElementById('hire-type');
+      if (select) {
+        select.value = type;
+      }
+    }
+
+    function downloadCV(e) {
+      e.preventDefault();
+      alert("Resume / CV of Muhammad Naeem is downloading! (Junior Full-Stack Developer, 2026 Profile)");
+    }
+  </script>
+</body>
+
+</html>

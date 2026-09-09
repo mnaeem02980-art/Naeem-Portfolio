@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Skills - Muhammad Naeem</title>
+  <meta name="description" content="Technical skills and tools utilized by Muhammad Naeem - Junior Full-Stack Developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <header class="nav-header">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-avatar">
+          <img src="Naeem.jfif" alt="Muhammad Naeem" />
+        </div>
+        <div class="brand-meta">
+          <h2>Muhammad Naeem</h2>
+          <span>Junior Full-Stack Developer</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-menu-link">Home</a></li>
+        <li><a href="about.html" class="nav-menu-link">About</a></li>
+        <li><a href="skills.html" class="nav-menu-link active">Skills</a></li>
+        <li><a href="projects.html" class="nav-menu-link">Projects</a></li>
+        <li><a href="services.html" class="nav-menu-link">Services</a></li>
+        <li><a href="testimonials.html" class="nav-menu-link">Reviews</a></li>
+        <li><a href="contact.html" class="nav-menu-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <div class="theme-switch-wrap" title="Select Theme: Black or White">
+          <button class="theme-mode-btn active" id="theme-btn-black" title="Black Theme">
+            <i class="fas fa-moon"></i> Black
+          </button>
+          <button class="theme-mode-btn" id="theme-btn-white" title="White Theme">
+            <i class="fas fa-sun"></i> White
+          </button>
+        </div>
+        <a href="hire-me.html" class="btn-hire">
+          <i class="fas fa-briefcase"></i> Hire Me
+        </a>
+        <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="section-badge"><i class="fas fa-code"></i> Technical Competencies & Tools</div>
+      <h1 class="page-title">Skills & <em class="text-gradient-cyan">Tech Matrix</em></h1>
+      <p class="page-subtitle">A comprehensive breakdown of my frontend engineering, backend architecture, database modeling, and dev tooling proficiencies.</p>
+    </div>
+
+    <!-- Highlights Metric Bar -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 1.2rem; margin-bottom: 2.8rem;">
+      <div class="stat-pill" style="border-left: 3px solid var(--c-cyan);">
+        <div class="stat-pill-num text-gradient-cyan">92%</div>
+        <div class="stat-pill-lbl">Frontend & React</div>
+      </div>
+      <div class="stat-pill" style="border-left: 3px solid var(--c-violet);">
+        <div class="stat-pill-num text-gradient-violet">88%</div>
+        <div class="stat-pill-lbl">Backend & Node/APIs</div>
+      </div>
+      <div class="stat-pill" style="border-left: 3px solid var(--c-emerald);">
+        <div class="stat-pill-num text-gradient-emerald">86%</div>
+        <div class="stat-pill-lbl">Databases & Schemas</div>
+      </div>
+      <div class="stat-pill" style="border-left: 3px solid #F59E0B;">
+        <div class="stat-pill-num text-gradient-amber">90%</div>
+        <div class="stat-pill-lbl">Git, CI/CD & Tooling</div>
+      </div>
+    </div>
+
+    <div class="skills-grid">
+      <!-- 1. Frontend Engineering -->
+      <div class="skill-category-card">
+        <div class="category-header">
+          <div class="category-icon icon-frontend"><i class="fab fa-react"></i></div>
+          <div>
+            <h3 class="category-title">Frontend Engineering</h3>
+            <span style="font-size: 0.78rem; color: var(--c-cyan); font-weight: 700; font-family: var(--font-mono);">UI & Component Layer</span>
+          </div>
+        </div>
+
+        <div class="skill-meters-list">
+          <div class="skill-meter-item">
+            <div class="skill-meter-header">
+              <span class="skill-meter-name"><i class="fab fa-react" style="color: #61DAFB;"></i> React.js / Hooks</span>
+              <span class="skill-meter-pct">92%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-cyan" style="width: 92%;"></div></div>
+          </div>
+
+          <div class="skill-meter-item">
+            <div class="skill-meter-header">
+              <span class="skill-meter-name"><i class="fab fa-js" style="color: #F7DF1E;"></i> JavaScript (ES6+ / Modern)</span>
+              <span class="skill-meter-pct">90%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-cyan" style="width: 90%;"></div></div>
+          </div>
+
+          <div class="skill-meter-item">
+            <div class="skill-meter-header">
+              <span class="skill-meter-name"><i class="fab fa-css3-alt" style="color: #1572B6;"></i> CSS3 / Grid / Flexbox</span>
+              <span class="skill-meter-pct">95%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-cyan" style="width: 95%;"></div></div>
+          </div>
+
+          <div class="skill-meter-item">
+            <div class="skill-meter-header">
+              <span class="skill-meter-name"><i class="fab fa-html5" style="color: #E34F26;"></i> HTML5 / Semantic Web</span>
+              <span class="skill-meter-pct">96%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-cyan" style="width: 96%;"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-tag-list" style="margin-top: 1.6rem; padding-top: 1.2rem; border-top: 1px solid var(--border-subtle);">
+          <span class="skill-tag"><i class="fas fa-mobile-alt" style="color:#10B981;"></i> Responsive</span>
+          <span class="skill-tag"><i class="fas fa-moon" style="color:#A855F7;"></i> Theme Toggle</span>
+          <span class="skill-tag"><i class="fas fa-cubes" style="color:#00F2FE;"></i> Component UX</span>
+        </div>
+      </div>
+
+      <!-- 2. Backend & API Services -->
+      <div class="skill-category-card">
+        <div class="category-header">
+          <div class="category-icon icon-backend" style="border-color: var(--c-violet); background: rgba(139, 92, 246, 0.12); color: #C084FC !important;"><i class="fab fa-node-js"></i></div>
+          <div>
+            <h3 class="category-title">Backend Architecture</h3>
+            <span style="font-size: 0.78rem; color: #C084FC; font-weight: 700; font-family: var(--font-mono);">Server & APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-meters-list">
+          <div class="skill-meter-item">
+            <div class="skill-meter-header">
+              <span class="skill-meter-name"><i class="fab fa-node" style="color: #339933;"></i> Node.js Runtime</span>
+              <span class="skill-meter-pct" style="color: #C084FC;">88%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-violet" style="width: 88%;"></div></div>
+          </div>
+
+          <div class="skill-meter-item">
+            <div class="skill-meter-header">
+              <span class="skill-meter-name"><i class="fas fa-server" style="color: #818CF8;"></i> Express.js Framework</span>
+              <span class="skill-meter-pct" style="color: #C084FC;">86%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-violet" style="width: 86%;"></div></div>
+          </div>
+
+          <div class="skill-meter-item">
+            <div class="skill-meter-header">
+              <span class="skill-meter-name"><i class="fas fa-network-wired" style="color: #06B6D4;"></i> RESTful API Design</span>
+              <span class="skill-meter-pct" style="color: #C084FC;">92%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-violet" style="width: 92%;"></div></div>
+          </div>
+
+          <div class="skill-meter-item">
+            <div class="skill-meter-header">
+              <span class="skill-meter-name"><i class="fas fa-key" style="color: #F59E0B;"></i> JWT & Auth Middleware</span>
+              <span class="skill-meter-pct" style="color: #C084FC;">85%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-violet" style="width: 85%;"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-tag-list" style="margin-top: 1.6rem; padding-top: 1.2rem; border-top: 1px solid var(--border-subtle);">
+          <span class="skill-tag"><i class="fas fa-shield-alt" style="color:#10B981;"></i> CORS & Security</span>
+          <span class="skill-tag"><i class="fas fa-sliders" style="color:#C084FC;"></i> Middleware</span>
+          <span class="skill-tag"><i class="fas fa-plug" style="color:#F59E0B;"></i> WebSockets</span>
+        </div>
+      </div>
+
+      <!-- 3. Databases & Schemas -->
+      <div class="skill-category-card">
+        <div class="category-header">
+          <div class="category-icon icon-database" style="border-color: var(--c-emerald); background: rgba(16, 185, 129, 0.12); color: #10B981 !important;"><i class="fas fa-database"></i></div>
+          <div>
+            <h3 class="category-title">Databases & Storage</h3>
+            <span style="font-size: 0.78rem; color: #10B981; font-weight: 700; font-family: var(--font-mono);">Data Layer</span>
+          </div>
+        </div>
+
+        <div class="skill-meters-list">
+          <div class="skill-meter-item">
+            <div class="skill-meter-header">
+              <span class="skill-meter-name"><i class="fas fa-leaf" style="color: #47A248;"></i> MongoDB & Mongoose</span>
+              <span class="skill-meter-pct" style="color: #10B981;">86%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-emerald" style="width: 86%;"></div></div>
+          </div>
+
+          <div class="skill-meter-item">
+            <div class="skill-meter-header">
+              <span class="skill-meter-name"><i class="fas fa-database" style="color: #336791;"></i> PostgreSQL / SQL</span>
+              <span class="skill-meter-pct" style="color: #10B981;">84%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-emerald" style="width: 84%;"></div></div>
+          </div>
+
+          <div class="skill-meter-item">
+            <div class="skill-meter-header">
+              <span class="skill-meter-name"><i class="fas fa-project-diagram" style="color: #818CF8;"></i> Relational Schema Design</span>
+              <span class="skill-meter-pct" style="color: #10B981;">88%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-emerald" style="width: 88%;"></div></div>
+          </div>
+
+          <div class="skill-meter-item">
+            <div class="skill-meter-header">
+              <span class="skill-meter-name"><i class="fas fa-server" style="color: #F59E0B;"></i> LocalStorage & Caching</span>
+              <span class="skill-meter-pct" style="color: #10B981;">94%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-emerald" style="width: 94%;"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-tag-list" style="margin-top: 1.6rem; padding-top: 1.2rem; border-top: 1px solid var(--border-subtle);">
+          <span class="skill-tag"><i class="fas fa-table" style="color:#336791;"></i> MySQL</span>
+          <span class="skill-tag"><i class="fas fa-fire" style="color:#F59E0B;"></i> Firebase</span>
+          <span class="skill-tag"><i class="fas fa-code-compare" style="color:#10B981;"></i> Queries</span>
+        </div>
+      </div>
+
+      <!-- 4. Tools & DevOps Workflow -->
+      <div class="skill-category-card">
+        <div class="category-header">
+          <div class="category-icon icon-tools" style="border-color: #F59E0B; background: rgba(245, 158, 11, 0.12); color: #F59E0B !important;"><i class="fas fa-wrench"></i></div>
+          <div>
+            <h3 class="category-title">Workflow & Tooling</h3>
+            <span style="font-size: 0.78rem; color: #F59E0B; font-weight: 700; font-family: var(--font-mono);">Dev Environment</span>
+          </div>
+        </div>
+
+        <div class="skill-meters-list">
+          <div class="skill-meter-item">
+            <div class="skill-meter-header">
+              <span class="skill-meter-name"><i class="fab fa-git-alt" style="color: #F05032;"></i> Git & GitHub Version Control</span>
+              <span class="skill-meter-pct" style="color: #F59E0B;">90%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-amber" style="width: 90%;"></div></div>
+          </div>
+
+          <div class="skill-meter-item">
+            <div class="skill-meter-header">
+              <span class="skill-meter-name"><i class="fas fa-vial" style="color: #FF6C37;"></i> Postman API Testing</span>
+              <span class="skill-meter-pct" style="color: #F59E0B;">88%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-amber" style="width: 88%;"></div></div>
+          </div>
+
+          <div class="skill-meter-item">
+            <div class="skill-meter-header">
+              <span class="skill-meter-name"><i class="fas fa-laptop-code" style="color: #007ACC;"></i> VS Code & Modern Linters</span>
+              <span class="skill-meter-pct" style="color: #F59E0B;">95%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-amber" style="width: 95%;"></div></div>
+          </div>
+
+          <div class="skill-meter-item">
+            <div class="skill-meter-header">
+              <span class="skill-meter-name"><i class="fas fa-cloud" style="color: #06B6D4;"></i> Vercel, Netlify & Cloud</span>
+              <span class="skill-meter-pct" style="color: #F59E0B;">86%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-amber" style="width: 86%;"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-tag-list" style="margin-top: 1.6rem; padding-top: 1.2rem; border-top: 1px solid var(--border-subtle);">
+          <span class="skill-tag"><i class="fab fa-npm" style="color:#CB3837;"></i> NPM / Vite</span>
+          <span class="skill-tag"><i class="fas fa-terminal" style="color:#00F2FE;"></i> Bash CLI</span>
+          <span class="skill-tag"><i class="fas fa-bug" style="color:#FB7185;"></i> Debugging</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div style="text-align: center; margin-top: 3.5rem; padding: 2.5rem; background: var(--grad-card); border: 1px solid var(--border-card); border-radius: var(--radius-md);">
+      <h3 style="font-size: 1.6rem; font-weight: 800; color: var(--text-heading); margin-bottom: 0.8rem;">Ready to See These Skills in Action?</h3>
+      <p style="font-size: 1rem; color: var(--text-muted); margin-bottom: 1.5rem;">Explore real-world full-stack web applications and systems built by Muhammad Naeem.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="projects.html" class="btn-primary"><i class="fas fa-laptop-code"></i> View Projects</a>
+        <a href="contact.html" class="btn-secondary"><i class="fas fa-envelope"></i> Contact Me</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-inner">
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="testimonials.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="hire-me.html">Hire Me</a></li>
+      </ul>
+      <p class="footer-copy">
+        Designed & Built for <strong>Muhammad Naeem</strong> &bull; Junior Full-Stack Developer &copy; 2026. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=cyber_advance"></script>
+</body>
+</html>
