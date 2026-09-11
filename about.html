@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=cyber_clean_v5" />
 </head>
 <body>
   <div id="cursor-dot"></div>
@@ -112,6 +112,22 @@
         <p class="about-text-desc">
           I believe that exceptional web development is the intersection of high visual aesthetics, robust server logic, and clean, readable code that teams can easily maintain and scale.
         </p>
+
+        <!-- Personal Info & Key Specs (DOB, Location, Core Stack) -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 0.9rem; margin: 1.6rem 0 1.8rem;">
+          <div style="background: var(--bg-subtle); border: 1px solid var(--border-subtle); padding: 0.9rem 1.1rem; border-radius: var(--radius-sm);">
+            <span style="font-size: 0.72rem; font-family: var(--font-mono); font-weight: 800; color: var(--c-cyan); text-transform: uppercase; display: block; margin-bottom: 0.3rem;"><i class="fas fa-calendar-alt"></i> Date of Birth (DOB)</span>
+            <strong id="user-dob-display" style="font-size: 0.95rem;">01 January 2003</strong>
+          </div>
+          <div style="background: var(--bg-subtle); border: 1px solid var(--border-subtle); padding: 0.9rem 1.1rem; border-radius: var(--radius-sm);">
+            <span style="font-size: 0.72rem; font-family: var(--font-mono); font-weight: 800; color: var(--c-emerald); text-transform: uppercase; display: block; margin-bottom: 0.3rem;"><i class="fas fa-map-marker-alt"></i> Location</span>
+            <strong style="font-size: 0.95rem;">Kohat, KPK, Pakistan</strong>
+          </div>
+          <div style="background: var(--bg-subtle); border: 1px solid var(--border-subtle); padding: 0.9rem 1.1rem; border-radius: var(--radius-sm);">
+            <span style="font-size: 0.72rem; font-family: var(--font-mono); font-weight: 800; color: #C084FC; text-transform: uppercase; display: block; margin-bottom: 0.3rem;"><i class="fas fa-code"></i> Frontend Stack</span>
+            <strong style="font-size: 0.95rem;">HTML5, CSS3, Bootstrap, JS</strong>
+          </div>
+        </div>
 
         <div class="journey-box">
           <div class="journey-title"><i class="fas fa-compass"></i> Development Mindset & Philosophy</div>

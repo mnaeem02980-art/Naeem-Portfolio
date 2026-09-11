@@ -51,18 +51,40 @@
   --text-dim: #94A3B8;
   --text-accent: var(--c-cyan);
 
-  /* Professional High-Contrast Highlight Tokens (Dark Mode - Advanced Mixed Gradients) */
-  --hl-cyan: linear-gradient(135deg, #00F2FE 0%, #38BDF8 25%, #6366F1 65%, #A855F7 100%);
-  --hl-violet: linear-gradient(135deg, #60A5FA 0%, #818CF8 28%, #C084FC 62%, #F472B6 100%);
-  --hl-emerald: linear-gradient(135deg, #00F2FE 0%, #10B981 35%, #34D399 70%, #A7F3D0 100%);
+  /* ── Cyber Neon Signature Palette (Electric Vivid) ── */
+  --neon-cyan: #00F2FE;
+  --neon-sky: #38BDF8;
+  --neon-violet: #8B5CF6;
+  --neon-purple: #A855F7;
+  --neon-pink: #F43F5E;
+  --neon-emerald: #10B981;
+  --neon-amber: #F59E0B;
+
+  /* Cyber Neon Dynamic Heading Gradients (Dark Mode) */
+  --grad-h1: linear-gradient(135deg, #FFFFFF 0%, #00F2FE 28%, #818CF8 58%, #C084FC 82%, #F43F5E 100%);
+  --grad-h2: linear-gradient(135deg, #FFFFFF 15%, #00F2FE 45%, #6366F1 75%, #A855F7 100%);
+  --grad-h3: linear-gradient(135deg, #F8FAFC 10%, #38BDF8 45%, #818CF8 75%, #C084FC 100%);
+  --grad-h4: linear-gradient(135deg, #00F2FE 0%, #10B981 60%, #34D399 100%);
+
+  /* Cyber Neon Specific Highlight Tokens (Dark Mode) */
+  --hl-cyber-neon: linear-gradient(135deg, #00F2FE 0%, #38BDF8 22%, #818CF8 45%, #C084FC 70%, #F43F5E 100%);
+  --hl-cyan: linear-gradient(135deg, #00F2FE 0%, #38BDF8 30%, #6366F1 68%, #A855F7 100%);
+  --hl-violet: linear-gradient(135deg, #818CF8 0%, #A855F7 35%, #C084FC 70%, #F43F5E 100%);
+  --hl-emerald: linear-gradient(135deg, #00F2FE 0%, #10B981 35%, #34D399 70%, #6EE7B7 100%);
   --hl-amber: linear-gradient(135deg, #FDE047 0%, #F59E0B 35%, #FB923C 70%, #F43F5E 100%);
   --hl-rose: linear-gradient(135deg, #FDA4AF 0%, #FB7185 30%, #F43F5E 65%, #E11D48 100%);
   --hl-silver: linear-gradient(135deg, #FFFFFF 25%, #E2E8F0 60%, #94A3B8 100%);
-  --hl-mixed: linear-gradient(135deg, #00F2FE 0%, #38BDF8 22%, #818CF8 48%, #C084FC 75%, #F472B6 100%);
-  --hl-aurora: linear-gradient(120deg, #00F2FE 0%, #38BDF8 20%, #818CF8 42%, #C084FC 65%, #F472B6 85%, #00F2FE 100%);
+  --hl-mixed: linear-gradient(135deg, #00F2FE 0%, #38BDF8 22%, #818CF8 48%, #C084FC 75%, #F43F5E 100%);
+  --hl-aurora: linear-gradient(120deg, #00F2FE 0%, #38BDF8 20%, #818CF8 40%, #C084FC 60%, #F43F5E 80%, #10B981 100%);
   --hl-tag-bg: rgba(0, 242, 254, 0.1);
   --hl-tag-border: rgba(0, 242, 254, 0.35);
   --hl-loc-color: #00F2FE;
+
+  /* Luminous Cyber Glow Tokens - Zero Shadow for Pure Razor-Sharp Contrast */
+  --text-glow-cyber: none;
+  --text-glow-violet: none;
+  --text-glow-emerald: none;
+  --text-glow-pink: none;
 
   /* Switcher */
   --switch-bg: #0D1322;
@@ -112,18 +134,40 @@
   --text-dim: #94A3B8;
   --text-accent: var(--c-cyan);
 
-  /* Professional High-Contrast Highlight Tokens (Light Mode - Deep Sapphire & Indigo Mixed Gradients) */
-  --hl-cyan: linear-gradient(135deg, #0284C7 0%, #2563EB 30%, #4F46E5 65%, #7C3AED 100%);
-  --hl-violet: linear-gradient(135deg, #3B82F6 0%, #6366F1 30%, #8B5CF6 65%, #D946EF 100%);
+  /* ── Cyber Neon Light Mode Tokens (Deep Jewel High-Contrast) ── */
+  --neon-cyan: #0284C7;
+  --neon-sky: #0369A1;
+  --neon-violet: #7C3AED;
+  --neon-purple: #9333EA;
+  --neon-pink: #BE123C;
+  --neon-emerald: #047857;
+  --neon-amber: #B45309;
+
+  /* Cyber Neon Dynamic Heading Gradients (Light Mode) */
+  --grad-h1: linear-gradient(135deg, #0F172A 0%, #0284C7 32%, #4F46E5 62%, #7C3AED 85%, #BE123C 100%);
+  --grad-h2: linear-gradient(135deg, #0F172A 15%, #0284C7 45%, #4F46E5 75%, #7C3AED 100%);
+  --grad-h3: linear-gradient(135deg, #1E293B 15%, #0369A1 48%, #4F46E5 78%, #7C3AED 100%);
+  --grad-h4: linear-gradient(135deg, #0284C7 0%, #047857 70%, #065F46 100%);
+
+  /* Cyber Neon Specific Highlight Tokens (Light Mode) */
+  --hl-cyber-neon: linear-gradient(135deg, #0284C7 0%, #2563EB 22%, #4F46E5 45%, #7C3AED 70%, #BE123C 100%);
+  --hl-cyan: linear-gradient(135deg, #0284C7 0%, #2563EB 30%, #4F46E5 68%, #7C3AED 100%);
+  --hl-violet: linear-gradient(135deg, #4F46E5 0%, #7C3AED 35%, #9333EA 70%, #BE123C 100%);
   --hl-emerald: linear-gradient(135deg, #0284C7 0%, #059669 35%, #047857 70%, #065F46 100%);
   --hl-amber: linear-gradient(135deg, #D97706 0%, #EA580C 35%, #C2410C 70%, #BE123C 100%);
-  --hl-rose: linear-gradient(135deg, #E11D48 0%, #BE123C 40%, #9F1239 75%, #881337 100%);
+  --hl-rose: linear-gradient(135deg, #E11D48 0%, #BE123C 35%, #9F1239 70%, #7C3AED 100%);
   --hl-silver: linear-gradient(135deg, #0F172A 20%, #1E293B 60%, #475569 100%);
   --hl-mixed: linear-gradient(135deg, #0284C7 0%, #2563EB 22%, #4F46E5 45%, #7C3AED 68%, #9333EA 88%, #BE123C 100%);
-  --hl-aurora: linear-gradient(120deg, #0284C7 0%, #2563EB 22%, #4F46E5 45%, #7C3AED 68%, #9333EA 88%, #0284C7 100%);
+  --hl-aurora: linear-gradient(120deg, #0284C7 0%, #2563EB 20%, #4F46E5 40%, #7C3AED 60%, #BE123C 80%, #047857 100%);
   --hl-tag-bg: rgba(2, 132, 199, 0.08);
   --hl-tag-border: rgba(2, 132, 199, 0.3);
   --hl-loc-color: #0284C7;
+
+  /* Crisp Light Shadows / Glows - Zero Shadow */
+  --text-glow-cyber: none;
+  --text-glow-violet: none;
+  --text-glow-emerald: none;
+  --text-glow-pink: none;
 
   /* Glows */
   --glow-cyan: 0 2px 12px rgba(2, 132, 199, 0.25);
@@ -154,29 +198,78 @@
   --transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Base Reset & Crisp Antialiasing */
+/* Base Reset & Crisp Antialiasing (100% Zero Text Shadow) */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-shadow: none !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
   text-rendering: optimizeLegibility !important;
 }
 
-/* Global Headings Base Architecture */
-h1, h2, h3, h4, h5, h6 {
+/* ==========================================================================
+   CYBER NEON HEADINGS & ADVANCE COLOR ARCHITECTURE
+   Dynamic Multi-Stop Linear Gradients with Luminous Depth
+   ========================================================================== */
+h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.18;
+  background: var(--grad-h1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+h2 {
   font-family: var(--font-display);
   font-weight: 800;
   letter-spacing: -0.022em;
-  color: var(--text-heading);
-  line-height: 1.25;
+  line-height: 1.22;
+  background: var(--grad-h2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
-/* Universal Specific Text Accents */
-strong, b {
+h3 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.018em;
+  line-height: 1.3;
+  background: var(--grad-h3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+h4 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  line-height: 1.35;
+  background: var(--grad-h4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+h5, h6 {
+  font-family: var(--font-display);
   font-weight: 800;
   color: var(--text-heading);
+}
+
+/* Universal Specific Text Accents (Cyber Neon Highlights) */
+strong, b {
+  font-weight: 800;
+  background: var(--hl-cyan);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
 }
 
 em {
@@ -322,7 +415,7 @@ button, .btn-primary, .btn-secondary, .btn-hire, .filter-btn, .theme-mode-btn, .
 }
 
 [data-theme="dark"] .brand-meta h2 {
-  filter: drop-shadow(0 0 10px rgba(0, 242, 254, 0.35));
+  filter: none;
 }
 
 .nav-brand:hover .brand-meta h2 {
@@ -330,7 +423,7 @@ button, .btn-primary, .btn-secondary, .btn-hire, .filter-btn, .theme-mode-btn, .
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: translateX(2px);
-  filter: drop-shadow(0 0 16px rgba(0, 242, 254, 0.65));
+  filter: none;
 }
 
 [data-theme="light"] .brand-meta h2 {
@@ -344,7 +437,7 @@ button, .btn-primary, .btn-secondary, .btn-hire, .filter-btn, .theme-mode-btn, .
   background: linear-gradient(135deg, #0284C7 0%, #2563EB 40%, #7C3AED 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 1px 4px rgba(2, 132, 199, 0.3));
+  filter: none;
 }
 
 .brand-meta span {
@@ -500,40 +593,56 @@ button, .btn-primary, .btn-secondary, .btn-hire, .filter-btn, .theme-mode-btn, .
   letter-spacing: -0.025em;
   line-height: 1.2;
   margin-bottom: 0.85rem;
-  color: var(--text-heading) !important;
+  background: var(--grad-h2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 /* ==========================================================================
-   ADVANCED LINEAR GRADIENT UTILITIES FOR HEADINGS & SPECIFIC TEXT
-   100% Contrast Safe in Both Black (Dark) & White (Light) Themes
+   ADVANCED CYBER NEON LINEAR GRADIENT UTILITIES
+   Electric Cyan, Hyper Violet, Neon Pink, and Matrix Emerald
    ========================================================================== */
 
-.text-gradient-cyan,
+.text-gradient-cyber,
+.heading-cyber-neon,
+.page-title em,
 .page-title em.text-gradient-cyan,
-.page-title em {
+.page-title em.text-gradient-mixed,
+.page-title em.text-gradient-aurora {
+  background: var(--hl-cyber-neon) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  display: inline-block;
+  font-weight: 800;
+  filter: var(--text-glow-cyber);
+}
+
+.text-gradient-cyan {
   background: var(--hl-cyan) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   display: inline-block;
   font-weight: 800;
+  filter: var(--text-glow-cyber);
 }
 
-.text-gradient-mixed,
-.page-title em.text-gradient-mixed {
+.text-gradient-mixed {
   background: var(--hl-mixed) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   display: inline-block;
   font-weight: 800;
+  filter: var(--text-glow-cyber);
 }
 
-.text-gradient-aurora,
-.page-title em.text-gradient-aurora {
+.text-gradient-aurora {
   background: var(--hl-aurora) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   display: inline-block;
   font-weight: 800;
+  filter: var(--text-glow-cyber);
 }
 
 .text-gradient-violet,
@@ -543,6 +652,7 @@ button, .btn-primary, .btn-secondary, .btn-hire, .filter-btn, .theme-mode-btn, .
   -webkit-text-fill-color: transparent !important;
   display: inline-block;
   font-weight: 800;
+  filter: var(--text-glow-violet);
 }
 
 .text-gradient-emerald,
@@ -552,6 +662,7 @@ button, .btn-primary, .btn-secondary, .btn-hire, .filter-btn, .theme-mode-btn, .
   -webkit-text-fill-color: transparent !important;
   display: inline-block;
   font-weight: 800;
+  filter: var(--text-glow-emerald);
 }
 
 .text-gradient-amber,
@@ -570,6 +681,7 @@ button, .btn-primary, .btn-secondary, .btn-hire, .filter-btn, .theme-mode-btn, .
   -webkit-text-fill-color: transparent !important;
   display: inline-block;
   font-weight: 800;
+  filter: var(--text-glow-pink);
 }
 
 .text-gradient-silver {
@@ -580,42 +692,32 @@ button, .btn-primary, .btn-secondary, .btn-hire, .filter-btn, .theme-mode-btn, .
   font-weight: 800;
 }
 
-/* Clean, Razor-Sharp Text Without Any Text Shadow or Glow */
-[data-theme="dark"] .text-gradient-cyan,
-[data-theme="dark"] .page-title em.text-gradient-cyan,
-[data-theme="dark"] .page-title em,
-[data-theme="dark"] .text-gradient-mixed,
-[data-theme="dark"] .page-title em.text-gradient-mixed,
-[data-theme="dark"] .text-gradient-aurora,
-[data-theme="dark"] .page-title em.text-gradient-aurora,
-[data-theme="dark"] .text-gradient-violet,
-[data-theme="dark"] .page-title em.text-gradient-violet,
-[data-theme="dark"] .text-gradient-emerald,
-[data-theme="dark"] .page-title em.text-gradient-emerald,
-[data-theme="dark"] .text-gradient-amber,
-[data-theme="dark"] .page-title em.text-gradient-amber,
-[data-theme="dark"] .text-gradient-rose,
-[data-theme="dark"] .page-title em.text-gradient-rose {
-  filter: none !important;
+/* ─── Specific Cyber Neon Accent Classes ───────────────────────────────── */
+.text-neon-cyan {
+  color: var(--neon-cyan) !important;
   text-shadow: none !important;
+  font-weight: 800;
 }
 
-/* White (Light) Theme: Ultra-Crisp Jewel Saturation with Zero Blurriness */
-[data-theme="light"] .text-gradient-cyan,
-[data-theme="light"] .page-title em.text-gradient-cyan,
-[data-theme="light"] .page-title em,
-[data-theme="light"] .text-gradient-mixed,
-[data-theme="light"] .page-title em.text-gradient-mixed,
-[data-theme="light"] .text-gradient-aurora,
-[data-theme="light"] .page-title em.text-gradient-aurora,
-[data-theme="light"] .text-gradient-violet,
-[data-theme="light"] .page-title em.text-gradient-violet,
-[data-theme="light"] .text-gradient-emerald,
-[data-theme="light"] .page-title em.text-gradient-emerald,
-[data-theme="light"] .text-gradient-amber,
-[data-theme="light"] .page-title em.text-gradient-amber,
-[data-theme="light"] .text-gradient-rose,
-[data-theme="light"] .page-title em.text-gradient-rose {
+.text-neon-violet {
+  color: var(--neon-violet) !important;
+  text-shadow: none !important;
+  font-weight: 800;
+}
+
+.text-neon-pink {
+  color: var(--neon-pink) !important;
+  text-shadow: none !important;
+  font-weight: 800;
+}
+
+.text-neon-emerald {
+  color: var(--neon-emerald) !important;
+  text-shadow: none !important;
+  font-weight: 800;
+}
+
+.text-cyber-glow {
   filter: none !important;
   text-shadow: none !important;
 }
@@ -671,7 +773,7 @@ button, .btn-primary, .btn-secondary, .btn-hire, .filter-btn, .theme-mode-btn, .
 }
 
 [data-theme="dark"] .badge-loc-highlight {
-  text-shadow: 0 0 10px rgba(0, 242, 254, 0.6);
+  text-shadow: none !important;
 }
 
 .hero-main-title {
@@ -806,7 +908,8 @@ button, .btn-primary, .btn-secondary, .btn-hire, .filter-btn, .theme-mode-btn, .
 }
 
 [data-theme="dark"] .location-tag {
-  filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.45));
+  filter: none !important;
+  text-shadow: none !important;
 }
 
 [data-theme="light"] .location-tag {
@@ -951,7 +1054,8 @@ button, .btn-primary, .btn-secondary, .btn-hire, .filter-btn, .theme-mode-btn, .
 }
 
 [data-theme="dark"] .profile-card-meta h3 {
-  filter: drop-shadow(0 0 10px rgba(0, 242, 254, 0.3));
+  filter: none !important;
+  text-shadow: none !important;
 }
 
 [data-theme="light"] .profile-card-meta h3 {
@@ -1822,14 +1926,21 @@ footer strong,
   font-size: 1.38rem;
   font-weight: 800;
   margin-bottom: 0.65rem;
-  color: var(--text-heading) !important;
+  background: var(--grad-h3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
   line-height: 1.3;
   letter-spacing: -0.015em;
-  transition: color 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .project-card:hover .project-title {
-  color: var(--hl-loc-color) !important;
+  background: var(--hl-cyber-neon) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: var(--text-glow-cyber);
+  transform: translateX(2px);
 }
 
 .project-desc {
@@ -1907,13 +2018,20 @@ footer strong,
   font-size: 1.35rem;
   font-weight: 800;
   margin-bottom: 0.8rem;
-  color: var(--text-heading) !important;
+  background: var(--grad-h3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
   letter-spacing: -0.015em;
-  transition: color 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .service-card:hover .service-title {
-  color: var(--hl-loc-color) !important;
+  background: var(--hl-cyber-neon) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: var(--text-glow-cyber);
+  transform: translateX(2px);
 }
 
 /* Specific Highlight: Hire Model Card Titles */
@@ -1921,14 +2039,21 @@ footer strong,
   font-family: var(--font-display);
   font-size: 1.4rem;
   font-weight: 800;
-  color: var(--text-heading) !important;
+  background: var(--grad-h3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
   letter-spacing: -0.015em;
   margin-bottom: 0.8rem;
-  transition: color 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .hire-model-card:hover .hire-model-title {
-  color: var(--hl-loc-color) !important;
+  background: var(--hl-cyber-neon) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: var(--text-glow-cyber);
+  transform: translateX(2px);
 }
 
 /* Specific Highlight: Client Review Names */
@@ -2481,38 +2606,49 @@ footer strong,
 }
 
 /* ==========================================================================
-   ADVANCE COLORS & LINEAR GRADIENTS (HEADINGS & SPECIFIC TEXT)
-   Dual-Theme Engine: 100% Contrast In Black & White Modes
+   ADVANCE CYBER NEON COLORS & LINEAR GRADIENTS (HEADINGS & SPECIFIC TEXT)
+   Dual-Theme Engine: 100% Engineered Contrast In Black & White Modes
    ========================================================================== */
 
-/* ─── Global Headings Enhancement ───────────────────────────────────────── */
-h1, h2, h3, h4, h5, h6 {
+/* ─── Global Headings Cyber Neon Gradients ──────────────────────────────── */
+h1 {
   font-family: var(--font-display);
   font-weight: 800;
-  letter-spacing: -0.022em;
-  color: var(--text-heading);
+  letter-spacing: -0.025em;
+  line-height: 1.18;
+  background: var(--grad-h1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  filter: var(--text-glow-cyber);
 }
 
-.page-title {
+h2, .page-title {
   font-family: var(--font-display);
   font-size: clamp(2.2rem, 4.5vw, 3.2rem);
   font-weight: 800;
   letter-spacing: -0.025em;
   line-height: 1.2;
   margin-bottom: 0.85rem;
-  color: var(--text-heading);
+  background: var(--grad-h2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 /* ─── Specific Text Linear Gradient Highlights ─────────────────────────── */
+.text-gradient-cyber,
+.heading-cyber-neon,
 .text-gradient-cyan,
 .page-title em.text-gradient-cyan,
 .page-title em,
 .gradient-name {
-  background: var(--hl-cyan) !important;
+  background: var(--hl-cyber-neon) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   display: inline-block;
   font-weight: 800;
+  filter: var(--text-glow-cyber);
 }
 
 .text-gradient-violet,
@@ -2522,6 +2658,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-fill-color: transparent !important;
   display: inline-block;
   font-weight: 800;
+  filter: var(--text-glow-violet);
 }
 
 .text-gradient-emerald,
@@ -2531,6 +2668,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-fill-color: transparent !important;
   display: inline-block;
   font-weight: 800;
+  filter: var(--text-glow-emerald);
 }
 
 .text-gradient-amber,
@@ -2549,6 +2687,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-fill-color: transparent !important;
   display: inline-block;
   font-weight: 800;
+  filter: var(--text-glow-pink);
 }
 
 .text-gradient-silver {
@@ -2559,22 +2698,27 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
 }
 
-/* ─── Card Titles with Dynamic Gradient Transitions on Hover ───────────── */
+/* ─── Card Titles with Dynamic Cyber Neon Gradients & Glow Hover ────────── */
 .project-title {
   font-family: var(--font-display);
   font-size: 1.38rem;
   font-weight: 800;
   margin-bottom: 0.65rem;
-  color: var(--text-heading) !important;
+  background: var(--grad-h3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
   line-height: 1.3;
   letter-spacing: -0.015em;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .project-card:hover .project-title {
-  background: var(--hl-cyan) !important;
+  background: var(--hl-cyber-neon) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
+  filter: var(--text-glow-cyber);
+  transform: translateX(2px);
 }
 
 .service-title {
@@ -2582,94 +2726,124 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.35rem;
   font-weight: 800;
   margin-bottom: 0.8rem;
-  color: var(--text-heading) !important;
+  background: var(--grad-h3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
   letter-spacing: -0.015em;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .service-card:hover .service-title {
-  background: var(--hl-cyan) !important;
+  background: var(--hl-cyber-neon) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
+  filter: var(--text-glow-cyber);
+  transform: translateX(2px);
 }
 
 .hire-model-title {
   font-family: var(--font-display);
   font-size: 1.4rem;
   font-weight: 800;
-  color: var(--text-heading) !important;
+  background: var(--grad-h3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
   letter-spacing: -0.015em;
   margin-bottom: 0.8rem;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .hire-model-card:hover .hire-model-title {
-  background: var(--hl-cyan) !important;
+  background: var(--hl-cyber-neon) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
+  filter: var(--text-glow-cyber);
+  transform: translateX(2px);
 }
 
 .timeline-title {
   font-family: var(--font-display);
   font-size: 1.3rem;
   font-weight: 800;
-  color: var(--text-heading);
+  background: var(--grad-h3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
   margin-bottom: 0.6rem;
   letter-spacing: -0.015em;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .timeline-card:hover .timeline-title {
   background: var(--hl-violet) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
+  filter: var(--text-glow-violet);
+  transform: translateX(2px);
 }
 
 .pillar-title {
   font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: 800;
-  color: var(--text-heading);
+  background: var(--grad-h3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
   margin-bottom: 0.6rem;
   letter-spacing: -0.015em;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .pillar-card:hover .pillar-title {
   background: var(--hl-emerald) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
+  filter: var(--text-glow-emerald);
+  transform: translateX(2px);
 }
 
 .category-title {
   font-family: var(--font-display);
   font-size: 1.2rem;
   font-weight: 800;
-  color: var(--text-heading);
+  background: var(--grad-h3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
   letter-spacing: -0.015em;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .skill-category-card:hover .category-title {
-  background: var(--hl-cyan) !important;
+  background: var(--hl-cyber-neon) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
+  filter: var(--text-glow-cyber);
+  transform: translateX(2px);
 }
 
 .class-card-title {
   font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: 800;
-  color: var(--text-heading);
+  background: var(--grad-h3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
   letter-spacing: -0.015em;
   margin-bottom: 0.5rem;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .class-card:hover .class-card-title {
-  background: var(--hl-cyan) !important;
+  background: var(--hl-cyber-neon) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
+  filter: var(--text-glow-cyber);
+  transform: translateX(2px);
 }
 
 /* ─── Metric Numbers (Specific Text Gradients) ─────────────────────────── */
