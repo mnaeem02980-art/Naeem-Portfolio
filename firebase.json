@@ -5,7 +5,12 @@
       "firebase.json",
       ".firebaserc",
       "**/.*",
-      "server.js"
+      "server.js",
+      "*.bat",
+      "*.cmd",
+      "*.exe",
+      "*.sh",
+      "README.md"
     ],
     "headers": [
       {
