@@ -265,10 +265,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const typewriterTarget = document.getElementById('typewriter-role');
   if (typewriterTarget) {
     const roles = [
-      'Junior Full-Stack Developer',
-      'React & Node.js Specialist',
-      'REST API & Database Architect',
-      'Clean Code & UI Specialist',
+      'Junior Web Developer',
+      'HTML, CSS & Bootstrap Specialist',
+      'JavaScript & DOM Developer',
+      'PHP Backend Developer',
     ];
 
     let currentRoleIdx = 0;
@@ -347,23 +347,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const snippets = {
     'naeem.js': `<span class="t-kw">const</span> <span class="t-var">developer</span> = {
   <span class="t-prop">name</span>: <span class="t-str">"Muhammad Naeem"</span>,
-  <span class="t-prop">title</span>: <span class="t-str">"Junior Full-Stack Developer"</span>,
+  <span class="t-prop">title</span>: <span class="t-str">"Junior Web Developer"</span>,
   <span class="t-prop">location</span>: <span class="t-str">"Kohat, KPK, Pakistan"</span>,
+  <span class="t-prop">skills</span>: [<span class="t-str">"HTML"</span>, <span class="t-str">"CSS"</span>, <span class="t-str">"Bootstrap"</span>, <span class="t-str">"JavaScript"</span>, <span class="t-str">"DOM"</span>, <span class="t-str">"PHP"</span>],
   <span class="t-prop">availableForHire</span>: <span class="t-kw">true</span>,
   <span class="t-fn">buildExperience</span>() {
-    <span class="t-kw">return</span> <span class="t-str">"Fast, clean & responsive apps"</span>;
+    <span class="t-kw">return</span> <span class="t-str">"Fast, clean & responsive web apps"</span>;
   }
 };`,
     'stack.json': `{
-  <span class="t-prop">"frontend"</span>: [<span class="t-str">"React.js"</span>, <span class="t-str">"Vanilla JS"</span>, <span class="t-str">"Modern CSS3"</span>],
-  <span class="t-prop">"backend"</span>: [<span class="t-str">"Node.js"</span>, <span class="t-str">"Express"</span>, <span class="t-str">"REST APIs"</span>],
-  <span class="t-prop">"databases"</span>: [<span class="t-str">"PostgreSQL"</span>, <span class="t-str">"MongoDB"</span>],
-  <span class="t-prop">"deployment"</span>: [<span class="t-str">"Firebase Hosting"</span>, <span class="t-str">"Git/GitHub"</span>]
+  <span class="t-prop">"markup_styling"</span>: [<span class="t-str">"HTML5"</span>, <span class="t-str">"CSS3"</span>, <span class="t-str">"Bootstrap 5"</span>],
+  <span class="t-prop">"client_scripting"</span>: [<span class="t-str">"JavaScript (ES6+)"</span>, <span class="t-str">"DOM Manipulation"</span>],
+  <span class="t-prop">"server_backend"</span>: [<span class="t-str">"PHP"</span>, <span class="t-str">"Form Handling"</span>, <span class="t-str">"Sessions"</span>]
 }`,
     'contact.sh': `<span class="t-com"># Contact Muhammad Naeem</span>
 $ curl -X POST https://api.naeem.dev/hire \\
-  -d <span class="t-str">'{"role": "Full-Stack Developer", "hire": true}'</span>
-<span class="t-str">"Status 200 OK: Ready for new challenge!"</span>`,
+  -d <span class="t-str">'{"role": "Web Developer", "hire": true}'</span>
+<span class="t-str">"Status 200 OK: Ready for new web challenge!"</span>`,
   };
 
   if (terminalCodeSnippet && terminalTabs.length > 0) {
