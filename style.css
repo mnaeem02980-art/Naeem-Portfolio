@@ -4160,3 +4160,32 @@ h2, .page-title {
   line-height: 1.6;
   margin: 0;
 }
+
+/* ==========================================================================
+   JQUERY FLOATING BACK-TO-TOP BUTTON
+   ========================================================================== */
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--c-cyan, #00F2FE), var(--c-purple, #A855F7));
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 242, 254, 0.35);
+  z-index: 9999;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  font-size: 1.05rem;
+}
+
+#back-to-top:hover {
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 12px 30px rgba(168, 85, 247, 0.55);
+}
