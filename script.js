@@ -1,5 +1,5 @@
 // ==========================================================================
-// MUHAMMAD NAEEM PORTFOLIO - FULL ADVANCED SYSTEM LOGIC
+// MR NAEEM PORTFOLIO - FULL ADVANCED SYSTEM LOGIC
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const roles = [
       'Junior Web Developer',
       'HTML, CSS & Bootstrap Specialist',
-      'JavaScript & DOM Developer',
+      'JavaScript, DOM & jQuery Developer',
       'PHP Backend Developer',
     ];
 
@@ -346,10 +346,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const snippets = {
     'naeem.js': `<span class="t-kw">const</span> <span class="t-var">developer</span> = {
-  <span class="t-prop">name</span>: <span class="t-str">"Muhammad Naeem"</span>,
+  <span class="t-prop">name</span>: <span class="t-str">"Mr Naeem"</span>,
   <span class="t-prop">title</span>: <span class="t-str">"Junior Web Developer"</span>,
   <span class="t-prop">location</span>: <span class="t-str">"Kohat, KPK, Pakistan"</span>,
-  <span class="t-prop">skills</span>: [<span class="t-str">"HTML"</span>, <span class="t-str">"CSS"</span>, <span class="t-str">"Bootstrap"</span>, <span class="t-str">"JavaScript"</span>, <span class="t-str">"DOM"</span>, <span class="t-str">"PHP"</span>],
+  <span class="t-prop">skills</span>: [<span class="t-str">"HTML"</span>, <span class="t-str">"CSS"</span>, <span class="t-str">"Bootstrap"</span>, <span class="t-str">"JavaScript"</span>, <span class="t-str">"DOM"</span>, <span class="t-str">"jQuery"</span>, <span class="t-str">"PHP"</span>],
   <span class="t-prop">availableForHire</span>: <span class="t-kw">true</span>,
   <span class="t-fn">buildExperience</span>() {
     <span class="t-kw">return</span> <span class="t-str">"Fast, clean & responsive web apps"</span>;
@@ -357,10 +357,10 @@ document.addEventListener('DOMContentLoaded', () => {
 };`,
     'stack.json': `{
   <span class="t-prop">"markup_styling"</span>: [<span class="t-str">"HTML5"</span>, <span class="t-str">"CSS3"</span>, <span class="t-str">"Bootstrap 5"</span>],
-  <span class="t-prop">"client_scripting"</span>: [<span class="t-str">"JavaScript (ES6+)"</span>, <span class="t-str">"DOM Manipulation"</span>],
+  <span class="t-prop">"client_scripting"</span>: [<span class="t-str">"JavaScript (ES6+)"</span>, <span class="t-str">"DOM Manipulation"</span>, <span class="t-str">"jQuery"</span>],
   <span class="t-prop">"server_backend"</span>: [<span class="t-str">"PHP"</span>, <span class="t-str">"Form Handling"</span>, <span class="t-str">"Sessions"</span>]
 }`,
-    'contact.sh': `<span class="t-com"># Contact Muhammad Naeem</span>
+    'contact.sh': `<span class="t-com"># Contact Mr Naeem</span>
 $ curl -X POST https://api.naeem.dev/hire \\
   -d <span class="t-str">'{"role": "Web Developer", "hire": true}'</span>
 <span class="t-str">"Status 200 OK: Ready for new web challenge!"</span>`,

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MUHAMMAD NAEEM - SIGNATURE 4-COLOR ADVANCED DESIGN SYSTEM
+   MR NAEEM - SIGNATURE 4-COLOR ADVANCED DESIGN SYSTEM
    The 4 Core Colors:
      1. Midnight Obsidian (#090D1A) - Deep Tech Canvas
      2. Cyber Cyan (#00F2FE)         - Primary Electric Highlight
@@ -790,7 +790,7 @@ button, .btn-primary, .btn-secondary, .btn-hire, .filter-btn, .theme-mode-btn, .
   background: var(--hl-silver) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
-  display: inline-block;
+  display: block;
   font-weight: 800;
 }
 
@@ -826,8 +826,8 @@ button, .btn-primary, .btn-secondary, .btn-hire, .filter-btn, .theme-mode-btn, .
 }
 
 @keyframes namePulse {
-  0%, 100% { transform: translateY(0) scale(1); }
-  50%       { transform: translateY(-3px) scale(1.01); }
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.015); }
 }
 
 .gradient-name,
@@ -872,7 +872,7 @@ button, .btn-primary, .btn-secondary, .btn-hire, .filter-btn, .theme-mode-btn, .
     holoShift 1.8s ease-in-out infinite,
     holoHue   4s linear infinite,
     namePulse 3s ease-in-out infinite !important;
-  transform: translateY(-4px) scale(1.04) !important;
+  transform: scale(1.03) !important;
 }
 
 [data-theme="dark"] .gradient-name,
@@ -917,6 +917,50 @@ button, .btn-primary, .btn-secondary, .btn-hire, .filter-btn, .theme-mode-btn, .
     holoShift 1.8s ease-in-out infinite,
     holoHue   4s linear infinite,
     namePulse 3s ease-in-out infinite !important;
+}
+
+/* ----- Hero heading display fix ("Hi, I'm" / "Mr Naeem") ----- */
+.hero-main-title {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  line-height: 1.15;
+  overflow: visible;
+  gap: 0.2rem;
+}
+
+.hero-main-title > span:first-child {
+  display: block;
+  padding-bottom: 0.04em;
+  white-space: nowrap;
+}
+
+.hero-main-title br {
+  display: none;
+}
+
+.hero-main-title .gradient-name,
+[data-theme="light"] .hero-main-title .gradient-name {
+  /* extra room so background-clip:text doesn't cut the glyph edges */
+  padding: 0.04em 0.14em 0.1em 0.02em;
+  margin: 0 -0.14em 0 -0.02em;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  /* filter on clipped text causes flicker/blur in Chromium */
+  filter: none !important;
+  animation:
+    holoShift 5s ease-in-out infinite,
+    namePulse 6s ease-in-out infinite !important;
+  will-change: background-position, transform;
+}
+
+.hero-main-title .gradient-name:hover,
+[data-theme="light"] .hero-main-title .gradient-name:hover {
+  filter: none !important;
+  animation: holoShift 2s ease-in-out infinite !important;
+  transform: scale(1.02) !important;
 }
 
 .hero-desc {
@@ -1853,6 +1897,8 @@ footer strong,
 .icon-js { background: rgba(247, 223, 30, 0.14) !important; color: #F7DF1E !important; border-color: rgba(247, 223, 30, 0.35) !important; }
 .icon-dom { background: rgba(16, 185, 129, 0.14) !important; color: #10B981 !important; border-color: rgba(16, 185, 129, 0.35) !important; }
 .icon-php { background: rgba(119, 123, 180, 0.14) !important; color: #777BB4 !important; border-color: rgba(119, 123, 180, 0.35) !important; }
+.icon-jquery { background: rgba(7, 105, 173, 0.16) !important; color: #3B9EE8 !important; border-color: rgba(7, 105, 173, 0.4) !important; }
+.fill-jquery { background: linear-gradient(90deg, #0769AD, #3B9EE8); box-shadow: 0 0 10px rgba(7, 105, 173, 0.45); }
 
 
 /* â”€â”€â”€ Projects Page & Filter Buttons â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
