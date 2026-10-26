@@ -233,8 +233,8 @@
         ctx.clearRect(0, 0, width, height);
 
         const isLight = $('html').attr('data-theme') === 'light';
-        const nodeColor = isLight ? 'rgba(2, 132, 199, 0.45)' : 'rgba(0, 242, 254, 0.55)';
-        const lineColor = isLight ? 'rgba(79, 70, 229, 0.08)' : 'rgba(99, 102, 241, 0.12)';
+        const nodeColor = isLight ? 'rgba(234, 88, 12, 0.50)' : 'rgba(255, 94, 98, 0.65)';
+        const lineColor = isLight ? 'rgba(234, 88, 12, 0.08)' : 'rgba(255, 122, 0, 0.12)';
 
         for (let i = 0; i < particles.length; i++) {
           const p = particles[i];
