@@ -22,15 +22,12 @@
   --bg-header: rgba(8, 12, 22, 0.92);
   --bg-subtle: rgba(255, 255, 255, 0.05);
 
-  /* Ambient Arctic Sapphire Canvas Mesh */
+  /* Ambient Arctic Sapphire Canvas */
   --grad-canvas: 
     radial-gradient(ellipse 85% 50% at 50% -12%, rgba(14, 165, 233, 0.22) 0%, transparent 68%),
     radial-gradient(circle at 8% 25%, rgba(0, 216, 255, 0.16) 0%, transparent 45%),
     radial-gradient(circle at 92% 45%, rgba(37, 99, 235, 0.14) 0%, transparent 45%),
-    radial-gradient(circle at 50% 82%, rgba(16, 185, 129, 0.10) 0%, transparent 52%),
-    linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
-  --grid-size: 38px 38px;
+    radial-gradient(circle at 50% 82%, rgba(16, 185, 129, 0.10) 0%, transparent 52%);
 
   /* Card Surfaces & Borders */
   --grad-card: linear-gradient(155deg, rgba(14, 22, 42, 0.88) 0%, rgba(8, 12, 24, 0.94) 100%);
@@ -283,8 +280,6 @@ html {
 body {
   background-color: var(--bg-canvas);
   background-image: var(--grad-canvas);
-  background-size: 100% 100%, 100% 100%, 100% 100%, var(--grid-size), var(--grid-size);
-  background-position: 0 0, 0 0, 0 0, -1px -1px, -1px -1px;
   background-attachment: fixed;
   color: var(--text-body);
   font-family: var(--font-body);
@@ -3911,18 +3906,7 @@ h2, .page-title {
    Ambient Mesh Aurora Glow Orbs (Silicon Valley / Awwwards Aesthetics)
    ========================================================================== */
 .ambient-glow {
-  position: fixed;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 0;
-  filter: blur(110px);
-  opacity: 0.16;
-  transition: opacity 0.5s ease;
-}
-
-[data-theme="light"] .ambient-glow {
-  opacity: 0.07;
-  filter: blur(130px);
+  display: none !important;
 }
 
 .glow-1 {

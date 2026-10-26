@@ -245,25 +245,11 @@
           if (p.y < 0 || p.y > height) p.vy *= -1;
 
           ctx.beginPath();
-          ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+          ctx.arc(p.x, p.y, p.radius * 1.25, 0, Math.PI * 2);
           ctx.fillStyle = nodeColor;
+          ctx.shadowBlur = 12;
+          ctx.shadowColor = nodeColor;
           ctx.fill();
-
-          for (let j = i + 1; j < particles.length; j++) {
-            const p2 = particles[j];
-            const dx = p.x - p2.x;
-            const dy = p.y - p2.y;
-            const dist = Math.sqrt(dx * dx + dy * dy);
-
-            if (dist < 115) {
-              ctx.beginPath();
-              ctx.moveTo(p.x, p.y);
-              ctx.lineTo(p2.x, p2.y);
-              ctx.strokeStyle = lineColor;
-              ctx.lineWidth = 0.8 * (1 - dist / 115);
-              ctx.stroke();
-            }
-          }
         }
         requestAnimationFrame(renderCanvas);
       }
