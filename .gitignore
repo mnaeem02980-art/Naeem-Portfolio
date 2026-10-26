@@ -1,3 +1,8 @@
 .firebase/
 node_modules/
 *.log
+local_server.ps1
+setup_node.ps1
+set_path.ps1
+check_firebase.ps1
+deploy_to_firebase.bat
