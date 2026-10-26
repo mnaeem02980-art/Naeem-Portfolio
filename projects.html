@@ -86,6 +86,8 @@
     <!-- Working Interactive Category Filters -->
     <div class="filter-bar">
       <button class="filter-btn active" data-filter="all"><i class="fas fa-layer-group"></i> All Projects</button>
+      <button class="filter-btn" data-filter="react"><i class="fab fa-react"></i> React.js</button>
+      <button class="filter-btn" data-filter="jquery"><i class="fas fa-bolt"></i> jQuery</button>
       <button class="filter-btn" data-filter="fullstack"><i class="fas fa-cubes"></i> Full-Stack</button>
       <button class="filter-btn" data-filter="frontend"><i class="fas fa-desktop"></i> Frontend</button>
       <button class="filter-btn" data-filter="backend"><i class="fab fa-php"></i> Backend / PHP</button>
@@ -287,6 +289,69 @@
             </div>
             <span style="font-size: 0.8rem; color: #38BDF8; font-weight: 800; font-family: var(--font-mono);">Full-Stack</span>
           </div>
+      <!-- Project 7: React Dynamic Task & Workflow Hub -->
+      <div class="project-card" data-category="frontend react">
+        <div class="project-cover" style="background: linear-gradient(135deg, #091e3a 0%, #002244 50%, #003e6b 100%);">
+          <i class="fab fa-react" style="color: #00D8FF; font-size: 3.5rem;"></i>
+          <span class="project-status-pill" style="border-color: rgba(0,216,255,0.4); background: rgba(0,216,255,0.15); color: #00D8FF;"><span class="pulse-dot" style="background:#00D8FF;"></span> React 18 SPA</span>
+        </div>
+        <div class="project-body">
+          <div>
+            <div class="project-tech-tags">
+              <span class="tech-tag" style="border-color:#00D8FF; color:#00D8FF;"><i class="fab fa-react"></i> React 18</span>
+              <span class="tech-tag">useState / useEffect</span>
+              <span class="tech-tag">Virtual DOM</span>
+              <span class="tech-tag">Component UI</span>
+            </div>
+            <h3 class="project-title">React Dynamic Task & Workflow Hub</h3>
+            <p class="project-desc">
+              High-performance single page application engineered with modular React components, custom hooks, real-time reactive state management, and instant filter capabilities.
+            </p>
+            <div class="project-metrics-row">
+              <span class="metric-pill"><i class="fas fa-bolt" style="color: #00D8FF;"></i> Zero Reload UI</span>
+              <span class="metric-pill"><i class="fas fa-cubes" style="color: var(--c-emerald);"></i> 100% Componentized</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+              <a href="projects.html" class="btn-primary btn-sm"><i class="fas fa-eye"></i> View Details</a>
+              <a href="https://github.com/mnaeem02980-art/Naeem-Portfolio" target="_blank" class="btn-secondary btn-sm"><i class="fab fa-github"></i> Code</a>
+            </div>
+            <span style="font-size: 0.8rem; color: #00D8FF; font-weight: 800; font-family: var(--font-mono);">React 18</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 8: jQuery Interactive Data & Animation Suite -->
+      <div class="project-card" data-category="frontend jquery">
+        <div class="project-cover" style="background: linear-gradient(135deg, #021c35 0%, #073863 50%, #0d5c9e 100%);">
+          <i class="fas fa-bolt" style="color: #22A7F0; font-size: 3.5rem;"></i>
+          <span class="project-status-pill" style="border-color: rgba(34,167,240,0.4); background: rgba(34,167,240,0.15); color: #22A7F0;"><span class="pulse-dot" style="background:#22A7F0;"></span> jQuery Suite</span>
+        </div>
+        <div class="project-body">
+          <div>
+            <div class="project-tech-tags">
+              <span class="tech-tag" style="border-color:#22A7F0; color:#22A7F0;"><i class="fas fa-bolt"></i> jQuery 3.7+</span>
+              <span class="tech-tag">$.ajax</span>
+              <span class="tech-tag">DOM Traversal</span>
+              <span class="tech-tag">Chained Animations</span>
+            </div>
+            <h3 class="project-title">jQuery Interactive Data & UI Engine</h3>
+            <p class="project-desc">
+              Lightweight, fast client-side interaction suite featuring smooth asynchronous AJAX data fetching, responsive modal drawers, animated meter bars, and event listeners.
+            </p>
+            <div class="project-metrics-row">
+              <span class="metric-pill"><i class="fas fa-gauge-high" style="color: #22A7F0;"></i> 60fps Animations</span>
+              <span class="metric-pill"><i class="fas fa-arrows-rotate" style="color: var(--c-amber);"></i> Async AJAX JSON</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+              <a href="projects.html" class="btn-primary btn-sm"><i class="fas fa-eye"></i> View Details</a>
+              <a href="https://github.com/mnaeem02980-art/Naeem-Portfolio" target="_blank" class="btn-secondary btn-sm"><i class="fab fa-github"></i> Code</a>
+            </div>
+            <span style="font-size: 0.8rem; color: #22A7F0; font-weight: 800; font-family: var(--font-mono);">jQuery 3.7+</span>
+          </div>
         </div>
       </div>
     </div>
@@ -320,10 +385,11 @@
     </div>
   </footer>
 
-  <!-- Apni Local jQuery Library with CDN Fallback -->
+  <!-- Apni Local jQuery Library with CDN Fallback & React Core CDNs -->
   <script src="jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.7.1.min.js"><\/script>')</script>
-
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
   <script src="script.js?v=cyber_advance"></script>
 </body>
 </html>

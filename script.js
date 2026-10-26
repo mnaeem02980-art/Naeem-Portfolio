@@ -449,5 +449,197 @@ $ curl -X POST https://api.naeem.dev/hire \\
       });
     }
 
+    // ------------------------------------------------------------------------
+    // 15. React 18 Interactive Component Mounting
+    // ------------------------------------------------------------------------
+    if (window.React && window.ReactDOM && document.getElementById('react-skills-showcase')) {
+      const e = React.createElement;
+      const { useState } = React;
+
+      function SkillsInteractiveApp() {
+        const [activeFilter, setActiveFilter] = useState('all');
+        const [likes, setLikes] = useState(142);
+        const [hasLiked, setHasLiked] = useState(false);
+        const [search, setSearch] = useState('');
+
+        const items = [
+          { name: 'React 18 & Virtual DOM', cat: 'react', pct: 90, color: '#00D8FF', icon: 'fab fa-react', desc: 'SPA component structure, reconciliation algorithm, and declarative UI hierarchy.' },
+          { name: 'React Hooks (useState / useEffect)', cat: 'react', pct: 88, color: '#00D8FF', icon: 'fas fa-arrows-split-up-and-left', desc: 'Stateful logic separation, lifecycle synchronization, and custom hooks.' },
+          { name: 'jQuery 3.7+ DOM Engine', cat: 'jquery', pct: 94, color: '#22A7F0', icon: 'fas fa-bolt', desc: 'High-speed DOM query selection, chained event listeners, and interactive UI widgets.' },
+          { name: 'jQuery AJAX & API Calls', cat: 'jquery', pct: 90, color: '#22A7F0', icon: 'fas fa-arrows-rotate', desc: '$.ajax, $.getJSON, asynchronous requests, and real-time DOM injection.' },
+          { name: 'HTML5 Semantic Web', cat: 'core', pct: 97, color: '#E34F26', icon: 'fab fa-html5', desc: 'Semantic layouts, accessibility, metadata, and modern responsive structures.' },
+          { name: 'CSS3 Cyberpunk & Glassmorphism', cat: 'core', pct: 95, color: '#1572B6', icon: 'fab fa-css3-alt', desc: 'Custom CSS variables, flexbox, CSS grid, and ultra-smooth animations.' },
+          { name: 'Bootstrap 5 Responsive Grid', cat: 'core', pct: 94, color: '#7952B3', icon: 'fab fa-bootstrap', desc: 'Mobile-first 12-column layouts, navigation bars, modals, and helper utilities.' },
+          { name: 'PHP Server Logic & CRUD', cat: 'backend', pct: 88, color: '#777BB4', icon: 'fab fa-php', desc: 'Secure form handling, sessions, server-side data processing, and routing.' },
+        ];
+
+        const filtered = items.filter(item => {
+          const matchesCat = activeFilter === 'all' || item.cat === activeFilter;
+          const matchesSearch = item.name.toLowerCase().includes(search.toLowerCase()) || item.desc.toLowerCase().includes(search.toLowerCase());
+          return matchesCat && matchesSearch;
+        });
+
+        const handleLike = () => {
+          if (!hasLiked) {
+            setLikes(likes + 1);
+            setHasLiked(true);
+            if (typeof showToast === 'function') {
+              showToast('React 18 state updated: +1 Recommendation!');
+            }
+          }
+        };
+
+        return e('div', { className: 'react-app-container', style: {
+          background: 'var(--grad-card)',
+          border: '1.5px solid var(--border-card)',
+          borderRadius: 'var(--radius-lg)',
+          padding: '2rem',
+          boxShadow: 'var(--shadow-card)',
+          position: 'relative',
+          overflow: 'hidden'
+        }},
+          e('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1.5rem', borderBottom: '1px solid var(--border-subtle)', paddingBottom: '1.2rem' } },
+            e('div', null,
+              e('div', { style: { display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.35rem 0.85rem', background: 'rgba(0, 216, 255, 0.12)', border: '1px solid rgba(0, 216, 255, 0.35)', borderRadius: '999px', fontSize: '0.75rem', fontWeight: 700, color: '#00D8FF', marginBottom: '0.5rem' } },
+                e('i', { className: 'fab fa-react fa-spin', style: { animationDuration: '6s' } }),
+                'Live React 18 Interactive Component'
+              ),
+              e('h3', { style: { fontSize: '1.4rem', fontWeight: 800, margin: 0, color: 'var(--text-heading)' } },
+                'Interactive ',
+                e('span', { style: { color: '#00D8FF' } }, 'React 18'),
+                ' & ',
+                e('span', { style: { color: '#22A7F0' } }, 'jQuery'),
+                ' State Explorer'
+              ),
+              e('p', { style: { fontSize: '0.88rem', color: 'var(--text-muted)', margin: '0.3rem 0 0 0' } },
+                'Rendered dynamically in real-time using React 18 Virtual DOM state management with jQuery animation synchronization.'
+              )
+            ),
+            e('button', {
+              onClick: handleLike,
+              style: {
+                background: hasLiked ? 'rgba(0, 216, 255, 0.2)' : 'rgba(255, 255, 255, 0.05)',
+                border: hasLiked ? '1px solid #00D8FF' : '1px solid var(--border-subtle)',
+                color: hasLiked ? '#00D8FF' : 'var(--text-body)',
+                borderRadius: '999px',
+                padding: '0.55rem 1.2rem',
+                cursor: 'pointer',
+                fontWeight: 700,
+                fontSize: '0.85rem',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                transition: 'all 0.2s ease'
+              }
+            },
+              e('i', { className: hasLiked ? 'fas fa-heart' : 'far fa-heart', style: { color: hasLiked ? '#FB7185' : '#00D8FF' } }),
+              e('span', null, hasLiked ? 'Recommended!' : 'Recommend Stack'),
+              e('span', { style: { background: 'rgba(0,0,0,0.3)', padding: '0.15rem 0.5rem', borderRadius: '12px', fontSize: '0.78rem' } }, likes)
+            )
+          ),
+
+          e('div', { style: { display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' } },
+            e('div', { style: { display: 'flex', gap: '0.4rem', flexWrap: 'wrap' } },
+              [
+                { id: 'all', label: 'All Technologies' },
+                { id: 'react', label: 'React.js (18)' },
+                { id: 'jquery', label: 'jQuery (3.7+)' },
+                { id: 'core', label: 'Core Frontend' },
+                { id: 'backend', label: 'PHP Backend' }
+              ].map(tab =>
+                e('button', {
+                  key: tab.id,
+                  onClick: () => {
+                    setActiveFilter(tab.id);
+                    if (typeof showToast === 'function') {
+                      showToast(`React State: Active filter switched to "${tab.label}"`);
+                    }
+                  },
+                  style: {
+                    background: activeFilter === tab.id ? 'linear-gradient(90deg, #00D8FF, #22A7F0)' : 'rgba(255, 255, 255, 0.04)',
+                    color: activeFilter === tab.id ? '#040d1a' : 'var(--text-muted)',
+                    border: activeFilter === tab.id ? 'none' : '1px solid var(--border-subtle)',
+                    fontWeight: 700,
+                    fontSize: '0.82rem',
+                    padding: '0.45rem 1rem',
+                    borderRadius: '999px',
+                    cursor: 'pointer',
+                    transition: 'all 0.2s ease'
+                  }
+                }, tab.label)
+              )
+            ),
+            e('div', { style: { position: 'relative', minWidth: '220px' } },
+              e('input', {
+                type: 'text',
+                placeholder: 'Live search skills...',
+                value: search,
+                onChange: (ev) => setSearch(ev.target.value),
+                style: {
+                  width: '100%',
+                  background: 'var(--bg-card)',
+                  border: '1px solid var(--border-subtle)',
+                  borderRadius: 'var(--radius-sm)',
+                  color: 'var(--text-heading)',
+                  padding: '0.5rem 0.9rem',
+                  fontSize: '0.85rem',
+                  outline: 'none'
+                }
+              })
+            )
+          ),
+
+          e('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '1rem' } },
+            filtered.length > 0 ? filtered.map((item, idx) =>
+              e('div', {
+                key: idx,
+                style: {
+                  background: 'rgba(255, 255, 255, 0.02)',
+                  border: '1px solid var(--border-subtle)',
+                  borderRadius: 'var(--radius-sm)',
+                  padding: '1.2rem',
+                  transition: 'transform 0.2s ease, border-color 0.2s ease'
+                }
+              },
+                e('div', { style: { display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.7rem' } },
+                  e('div', { style: { display: 'flex', alignItems: 'center', gap: '0.6rem' } },
+                    e('i', { className: item.icon, style: { color: item.color, fontSize: '1.25rem' } }),
+                    e('strong', { style: { fontSize: '0.95rem', color: 'var(--text-heading)' } }, item.name)
+                  ),
+                  e('span', { style: { fontSize: '0.82rem', fontWeight: 800, color: item.color, fontFamily: 'var(--font-mono)' } }, item.pct + '%')
+                ),
+                e('p', { style: { fontSize: '0.82rem', color: 'var(--text-muted)', lineHeight: '1.5', margin: '0 0 0.8rem 0' } }, item.desc),
+                e('div', { style: { width: '100%', height: '6px', background: 'rgba(255, 255, 255, 0.06)', borderRadius: '999px', overflow: 'hidden' } },
+                  e('div', { style: { width: item.pct + '%', height: '100%', background: item.color, borderRadius: '999px' } })
+                )
+              )
+            ) : e('div', { style: { textAlign: 'center', padding: '2rem', color: 'var(--text-muted)', gridColumn: '1 / -1' } },
+              'No skills matched your search filter.'
+            )
+          ),
+
+          e('div', { style: { marginTop: '1.4rem', paddingTop: '1rem', borderTop: '1px solid var(--border-subtle)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem', fontSize: '0.78rem', color: 'var(--text-muted)' } },
+            e('span', null,
+              e('i', { className: 'fas fa-check-circle', style: { color: '#10B981', marginRight: '0.35rem' } }),
+              'React 18 State: ',
+              e('strong', { style: { color: 'var(--text-body)' } }, filtered.length),
+              ' skills active'
+            ),
+            e('span', { style: { fontFamily: 'var(--font-mono)', fontSize: '0.74rem' } },
+              'Virtual DOM: React.useState + jQuery 3.7.1 Events'
+            )
+          )
+        );
+      }
+
+      const rootElem = document.getElementById('react-skills-showcase');
+      if (ReactDOM.createRoot) {
+        const root = ReactDOM.createRoot(rootElem);
+        root.render(e(SkillsInteractiveApp));
+      } else if (ReactDOM.render) {
+        ReactDOM.render(e(SkillsInteractiveApp), rootElem);
+      }
+    }
+
   });
 })(jQuery);
