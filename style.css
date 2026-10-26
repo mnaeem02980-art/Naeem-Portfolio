@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MR NAEEM - SIGNATURE SAPPHIRE & ARCTIC CYAN LUXE DESIGN SYSTEM
+   MUHAMMAD NAEEM - SIGNATURE SAPPHIRE & ARCTIC CYAN LUXE DESIGN SYSTEM
    Palette:
      1. Midnight Sapphire Canvas (#080C16)
      2. Electric Arctic Cyan (#00D8FF)
@@ -908,7 +908,7 @@ button, .btn-primary, .btn-secondary, .btn-hire, .filter-btn, .theme-mode-btn, .
     namePulse 3s ease-in-out infinite !important;
 }
 
-/* ----- Hero heading display fix ("Hi, I'm" / "Mr Naeem") ----- */
+/* ----- Hero heading display fix ("Hi, I'm" / "Muhammad Naeem") ----- */
 .hero-main-title {
   display: flex !important;
   flex-direction: column !important;

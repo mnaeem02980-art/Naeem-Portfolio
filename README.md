@@ -1,4 +1,4 @@
-# Mr Naeem - Developer Portfolio
+# Muhammad Naeem - Developer Portfolio
 
 > **Junior Full-Stack Developer** based in Kohat, KPK, Pakistan.
 
@@ -30,6 +30,6 @@ A modern, high-performance, dark/light themed developer portfolio built with:
 ---
 
 ## 📬 Contact
-- **Developer:** Mr Naeem
+- **Developer:** Muhammad Naeem
 - **Location:** Kohat, KPK, Pakistan
 - **Available for:** Full-Time, Remote & On-Site Roles

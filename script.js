@@ -1,5 +1,5 @@
 // ==========================================================================
-// MR NAEEM PORTFOLIO - JQUERY & ADVANCED SYSTEM LOGIC (3.7.1 COMPATIBLE)
+// MUHAMMAD NAEEM PORTFOLIO - JQUERY & ADVANCED SYSTEM LOGIC (3.7.1 COMPATIBLE)
 // ==========================================================================
 
 (function ($) {
@@ -7,7 +7,7 @@
 
   // Log jQuery initialization
   if (typeof jQuery !== 'undefined') {
-    console.log('%c[jQuery 3.7.1 Active] Mr Naeem Portfolio Loaded Successfully', 'color:#00F2FE; font-weight:bold;');
+    console.log('%c[jQuery 3.7.1 Active] Muhammad Naeem Portfolio Loaded Successfully', 'color:#00F2FE; font-weight:bold;');
   }
 
   $(function () {
@@ -350,7 +350,7 @@
 
     const snippets = {
       'naeem.js': `<span class="t-kw">const</span> <span class="t-var">developer</span> = {
-  <span class="t-prop">name</span>: <span class="t-str">"Mr Naeem"</span>,
+  <span class="t-prop">name</span>: <span class="t-str">"Muhammad Naeem"</span>,
   <span class="t-prop">title</span>: <span class="t-str">"Junior Full-Stack Developer"</span>,
   <span class="t-prop">location</span>: <span class="t-str">"Kohat, KPK, Pakistan"</span>,
   <span class="t-prop">skills</span>: [<span class="t-str">"HTML"</span>, <span class="t-str">"CSS"</span>, <span class="t-str">"Bootstrap"</span>, <span class="t-str">"JavaScript"</span>, <span class="t-str">"DOM"</span>, <span class="t-str">"jQuery"</span>, <span class="t-str">"React"</span>, <span class="t-str">"PHP"</span>],
@@ -364,7 +364,7 @@
   <span class="t-prop">"core_web"</span>: [<span class="t-str">"HTML5"</span>, <span class="t-str">"CSS3"</span>, <span class="t-str">"JavaScript ES6+"</span>, <span class="t-str">"DOM API"</span>],
   <span class="t-prop">"server_backend"</span>: [<span class="t-str">"PHP"</span>, <span class="t-str">"Form Handling"</span>, <span class="t-str">"Sessions"</span>]
 }`,
-      'contact.sh': `<span class="t-com"># Contact Mr Naeem</span>
+      'contact.sh': `<span class="t-com"># Contact Muhammad Naeem</span>
 $ curl -X POST https://api.naeem.dev/hire \\
   -d <span class="t-str">'{"role": "Full-Stack Developer", "hire": true}'</span>
 <span class="t-str">"Status 200 OK: Ready for new web challenge!"</span>`,
