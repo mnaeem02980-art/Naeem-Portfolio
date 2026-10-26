@@ -1,177 +1,183 @@
 /* ==========================================================================
-   MR NAEEM - SIGNATURE ADVANCE BEAUTY & AURORA CYBER DESIGN SYSTEM
-   The 5 Core Jewel & Beauty Colors:
-     1. Velvet Obsidian (#050814)       - Deep Celestial Canvas
-     2. Electric Aquamarine (#00F5FF)   - Ultra-Luminous Futuristic Cyan
-     3. Royal Orchid Amethyst (#B026FF) - Luxury Royalty & Depth
-     4. Neon Rose Sunset (#FF2A85)      - Vibrant Beauty & Emotion Accent
-     5. Spring Mint Emerald (#00F5A0)   - Live Status & Dynamic Energy
+   MR NAEEM - SIGNATURE 4-COLOR ADVANCED DESIGN SYSTEM
+   The 4 Core Colors:
+     1. Midnight Obsidian (#090D1A) - Deep Tech Canvas
+     2. Cyber Cyan (#00F2FE)         - Primary Electric Highlight
+     3. Hyper Violet (#8B5CF6)       - Secondary Royalty & Depth
+     4. Matrix Emerald (#10B981)     - Energy & Live Status Accent
+   100% Pure White (#FFFFFF) Headings & Maximum Engineered Contrast
    ========================================================================== */
 
-/* ─── ADVANCE BEAUTY CYBER THEME (Dark Mode Default) ─────────────────────── */
+/* ─── 4-COLOR ADVANCED BLACK THEME (Default) ─────────────────────────── */
 :root, [data-theme="dark"] {
-  /* The Signature Jewel Palette Colors */
-  --c-base: #050814;               /* Deep Velvet Cosmic Obsidian */
-  --c-cyan: #00F5FF;               /* Electric Aquamarine / Cyan */
-  --c-violet: #B026FF;             /* Royal Orchid Amethyst */
-  --c-rose: #FF2A85;               /* Neon Rose Sunset / Beauty Pink */
-  --c-emerald: #00F5A0;            /* Spring Mint Emerald */
-  --c-amber: #FFB800;              /* Radiant Sun Amber */
+  /* The 4 Signature Palette Colors */
+  --c-base: #070B14;               /* 1. Deep Midnight Obsidian */
+  --c-cyan: #00F2FE;               /* 2. Cyber Cyan */
+  --c-violet: #8B5CF6;             /* 3. Hyper Violet */
+  --c-emerald: #10B981;            /* 4. Matrix Emerald */
 
-  /* Backgrounds & Glassmorphic Surfaces */
+  /* Backgrounds & Surfaces */
   --bg-canvas: var(--c-base);
-  --bg-card: rgba(14, 22, 45, 0.78);
-  --bg-card-hover: rgba(20, 32, 64, 0.90);
-  --bg-header: rgba(5, 8, 20, 0.90);
+  --bg-card: #0D1322;
+  --bg-card-hover: #121A30;
+  --bg-header: rgba(7, 11, 20, 0.94);
   --bg-subtle: rgba(255, 255, 255, 0.05);
 
-  /* Advance Beauty Ambient Aurora Canvas Mesh */
+  /* 4-Color Ambient Canvas Gradient */
   --grad-canvas: 
-    radial-gradient(ellipse 75% 50% at 50% -12%, rgba(176, 38, 255, 0.28) 0%, transparent 68%),
-    radial-gradient(circle at 8% 22%, rgba(0, 245, 255, 0.20) 0%, transparent 45%),
-    radial-gradient(circle at 92% 42%, rgba(255, 42, 133, 0.18) 0%, transparent 45%),
-    radial-gradient(circle at 50% 82%, rgba(0, 245, 160, 0.14) 0%, transparent 52%),
-    linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
-  --grid-size: 38px 38px;
+    radial-gradient(ellipse 90% 55% at 50% -10%, rgba(139, 92, 246, 0.28) 0%, transparent 65%),
+    radial-gradient(circle at 10% 30%, rgba(0, 242, 254, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 90% 65%, rgba(16, 185, 129, 0.14) 0%, transparent 45%),
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  --grid-size: 42px 42px;
 
-  /* Card Surfaces, Sheen & Borders */
-  --grad-card: linear-gradient(155deg, rgba(16, 26, 52, 0.82) 0%, rgba(8, 13, 28, 0.92) 100%);
-  --border-subtle: rgba(255, 255, 255, 0.09);
-  --border-card: rgba(0, 245, 255, 0.16);
-  --border-card-hover: #00F5FF;
+  /* Card Surfaces & Borders */
+  --grad-card: linear-gradient(180deg, #111A2E 0%, #0A0F1D 100%);
+  --border-subtle: #1C2742;
+  --border-card: #233254;
+  --border-card-hover: var(--c-cyan);
 
-  /* Advance Beauty Action Gradients */
-  --grad-btn: linear-gradient(135deg, #00F5FF 0%, #7928CA 48%, #FF2A85 100%);
-  --grad-btn-hover: linear-gradient(135deg, #00DCF0 0%, #681EB8 48%, #E61572 100%);
-  --btn-glow: 0 4px 26px rgba(0, 245, 255, 0.42), 0 0 16px rgba(255, 42, 133, 0.26);
+  /* 4-Color Action Gradients */
+  --grad-btn: linear-gradient(135deg, #00F2FE 0%, #6366F1 50%, #8B5CF6 100%);
+  --grad-btn-hover: linear-gradient(135deg, #00D2DD 0%, #4F46E5 50%, #7C3AED 100%);
+  --btn-glow: 0 4px 25px rgba(0, 242, 254, 0.45);
 
-  /* Typography Colors */
+  /* Typography Colors (Dark Mode) */
   --text-heading: #FFFFFF;
   --text-heading-silver: #F8FAFC;
   --text-body: #F1F5F9;
   --text-muted: #CBD5E1;
   --text-dim: #94A3B8;
-  --text-accent: #00F5FF;
+  --text-accent: var(--c-cyan);
 
-  /* ── Advance Neon Vivid Palette ── */
-  --neon-cyan: #00F5FF;
+  /* ── Cyber Neon Signature Palette (Electric Vivid) ── */
+  --neon-cyan: #00F2FE;
   --neon-sky: #38BDF8;
-  --neon-violet: #B026FF;
-  --neon-purple: #C084FC;
-  --neon-pink: #FF2A85;
-  --neon-emerald: #00F5A0;
-  --neon-amber: #FFB800;
+  --neon-violet: #8B5CF6;
+  --neon-purple: #A855F7;
+  --neon-pink: #F43F5E;
+  --neon-emerald: #10B981;
+  --neon-amber: #F59E0B;
 
-  /* Dynamic Multi-Stop Heading Gradients (Dark Mode) */
-  --grad-h1: linear-gradient(135deg, #FFFFFF 0%, #00F5FF 26%, #B026FF 54%, #FF2A85 80%, #FFB800 100%);
-  --grad-h2: linear-gradient(135deg, #FFFFFF 15%, #00F5FF 42%, #7928CA 72%, #FF2A85 100%);
-  --grad-h3: linear-gradient(135deg, #F8FAFC 10%, #38BDF8 45%, #B026FF 75%, #FF2A85 100%);
-  --grad-h4: linear-gradient(135deg, #00F5FF 0%, #00F5A0 60%, #5EEAD4 100%);
+  /* Cyber Neon Dynamic Heading Gradients (Dark Mode) */
+  --grad-h1: linear-gradient(135deg, #FFFFFF 0%, #00F2FE 28%, #818CF8 58%, #C084FC 82%, #F43F5E 100%);
+  --grad-h2: linear-gradient(135deg, #FFFFFF 15%, #00F2FE 45%, #6366F1 75%, #A855F7 100%);
+  --grad-h3: linear-gradient(135deg, #F8FAFC 10%, #38BDF8 45%, #818CF8 75%, #C084FC 100%);
+  --grad-h4: linear-gradient(135deg, #00F2FE 0%, #10B981 60%, #34D399 100%);
 
-  /* Specific Highlight Tokens */
-  --hl-cyber-neon: linear-gradient(135deg, #00F5FF 0%, #38BDF8 22%, #B026FF 48%, #FF2A85 75%, #FFB800 100%);
-  --hl-cyan: linear-gradient(135deg, #00F5FF 0%, #38BDF8 30%, #7928CA 68%, #B026FF 100%);
-  --hl-violet: linear-gradient(135deg, #A855F7 0%, #B026FF 35%, #FF2A85 70%, #FF758C 100%);
-  --hl-emerald: linear-gradient(135deg, #00F5FF 0%, #00F5A0 40%, #10B981 70%, #6EE7B7 100%);
-  --hl-amber: linear-gradient(135deg, #FFDE59 0%, #FFB800 35%, #FF8C00 70%, #FF2A85 100%);
-  --hl-rose: linear-gradient(135deg, #FF758C 0%, #FF2A85 40%, #E6006F 70%, #B026FF 100%);
+  /* Cyber Neon Specific Highlight Tokens (Dark Mode) */
+  --hl-cyber-neon: linear-gradient(135deg, #00F2FE 0%, #38BDF8 22%, #818CF8 45%, #C084FC 70%, #F43F5E 100%);
+  --hl-cyan: linear-gradient(135deg, #00F2FE 0%, #38BDF8 30%, #6366F1 68%, #A855F7 100%);
+  --hl-violet: linear-gradient(135deg, #818CF8 0%, #A855F7 35%, #C084FC 70%, #F43F5E 100%);
+  --hl-emerald: linear-gradient(135deg, #00F2FE 0%, #10B981 35%, #34D399 70%, #6EE7B7 100%);
+  --hl-amber: linear-gradient(135deg, #FDE047 0%, #F59E0B 35%, #FB923C 70%, #F43F5E 100%);
+  --hl-rose: linear-gradient(135deg, #FDA4AF 0%, #FB7185 30%, #F43F5E 65%, #E11D48 100%);
   --hl-silver: linear-gradient(135deg, #FFFFFF 25%, #E2E8F0 60%, #94A3B8 100%);
-  --hl-mixed: linear-gradient(135deg, #00F5FF 0%, #38BDF8 22%, #B026FF 48%, #FF2A85 75%, #FFB800 100%);
-  --hl-aurora: linear-gradient(120deg, #00F5FF 0%, #38BDF8 20%, #B026FF 40%, #FF2A85 60%, #FFB800 80%, #00F5A0 100%);
-  --hl-tag-bg: rgba(0, 245, 255, 0.10);
-  --hl-tag-border: rgba(0, 245, 255, 0.32);
-  --hl-loc-color: #00F5FF;
+  --hl-mixed: linear-gradient(135deg, #00F2FE 0%, #38BDF8 22%, #818CF8 48%, #C084FC 75%, #F43F5E 100%);
+  --hl-aurora: linear-gradient(120deg, #00F2FE 0%, #38BDF8 20%, #818CF8 40%, #C084FC 60%, #F43F5E 80%, #10B981 100%);
+  --hl-tag-bg: rgba(0, 242, 254, 0.1);
+  --hl-tag-border: rgba(0, 242, 254, 0.35);
+  --hl-loc-color: #00F2FE;
 
-  /* Zero Shadow for Pure Razor-Sharp Contrast */
+  /* Luminous Cyber Glow Tokens - Zero Shadow for Pure Razor-Sharp Contrast */
   --text-glow-cyber: none;
   --text-glow-violet: none;
   --text-glow-emerald: none;
   --text-glow-pink: none;
 
   /* Switcher */
-  --switch-bg: rgba(14, 22, 45, 0.85);
-  --switch-border: rgba(0, 245, 255, 0.22);
-  --switch-active-bg: linear-gradient(135deg, #00F5FF, #B026FF);
+  --switch-bg: #0D1322;
+  --switch-border: #233254;
+  --switch-active-bg: linear-gradient(135deg, #00F2FE, #6366F1);
   --switch-active-text: #FFFFFF;
 
   /* Shadows */
-  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.58), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  --shadow-hover: 0 20px 48px rgba(0, 245, 255, 0.22), 0 0 35px rgba(176, 38, 255, 0.16);
+  --shadow-card: 0 8px 25px rgba(0, 0, 0, 0.55);
+  --shadow-hover: 0 16px 40px rgba(0, 242, 254, 0.22);
 }
 
-/* ─── ADVANCE BEAUTY WHITE THEME (Luxury Daylight Studio) ─────────────────── */
+/* ─── 4-COLOR ADVANCED WHITE THEME (Studio Light) ─────────────────────────── */
 [data-theme="light"] {
-  --c-base: #F8F9FE;
+  --c-base: #F8FAFC;
   --c-cyan: #0284C7;
   --c-violet: #7C3AED;
   --c-emerald: #059669;
-  --c-rose: #E11D48;
 
   --bg-canvas: var(--c-base);
-  --bg-card: rgba(255, 255, 255, 0.94);
-  --bg-card-hover: #FFFFFF;
-  --bg-header: rgba(248, 249, 254, 0.92);
-  --bg-subtle: #EEF2F9;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F1F5F9;
+  --bg-header: rgba(255, 255, 255, 0.95);
+  --bg-subtle: #F1F5F9;
 
   --grad-canvas: 
-    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(124, 58, 237, 0.12) 0%, transparent 65%),
-    radial-gradient(circle at 90% 35%, rgba(2, 132, 199, 0.10) 0%, transparent 45%),
-    radial-gradient(circle at 10% 55%, rgba(225, 29, 72, 0.08) 0%, transparent 45%),
-    linear-gradient(rgba(0, 0, 0, 0.022) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.022) 1px, transparent 1px);
-  --grid-size: 38px 38px;
+    radial-gradient(ellipse 90% 50% at 50% -10%, rgba(124, 58, 237, 0.1) 0%, transparent 65%),
+    radial-gradient(circle at 90% 40%, rgba(2, 132, 199, 0.08) 0%, transparent 45%),
+    linear-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+  --grid-size: 42px 42px;
 
-  --grad-card: linear-gradient(160deg, #FFFFFF 0%, #F5F7FD 100%);
+  --grad-card: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
   --border-subtle: #E2E8F0;
-  --border-card: #D3DCED;
-  --border-card-hover: #0284C7;
+  --border-card: #CBD5E1;
+  --border-card-hover: var(--c-cyan);
 
-  --grad-btn: linear-gradient(135deg, #0284C7 0%, #6366F1 50%, #E11D48 100%);
-  --grad-btn-hover: linear-gradient(135deg, #0369A1 0%, #4F46E5 50%, #BE123C 100%);
-  --btn-glow: 0 4px 18px rgba(2, 132, 199, 0.35);
+  --grad-btn: linear-gradient(135deg, #0284C7 0%, #2563EB 50%, #7C3AED 100%);
+  --grad-btn-hover: linear-gradient(135deg, #0369A1 0%, #1D4ED8 50%, #6D28D9 100%);
+  --btn-glow: 0 4px 16px rgba(2, 132, 199, 0.35);
 
-  --text-heading: #0B132B;
-  --text-heading-silver: #1C2541;
-  --text-body: #2C3550;
-  --text-muted: #5B6B8C;
-  --text-dim: #8D99AE;
-  --text-accent: #0284C7;
+  /* Typography Colors (Light Mode) */
+  --text-heading: #0F172A;
+  --text-heading-silver: #1E293B;
+  --text-body: #334155;
+  --text-muted: #64748B;
+  --text-dim: #94A3B8;
+  --text-accent: var(--c-cyan);
 
+  /* ── Cyber Neon Light Mode Tokens (Deep Jewel High-Contrast) ── */
   --neon-cyan: #0284C7;
   --neon-sky: #0369A1;
   --neon-violet: #7C3AED;
   --neon-purple: #9333EA;
-  --neon-pink: #E11D48;
-  --neon-emerald: #059669;
-  --neon-amber: #D97706;
+  --neon-pink: #BE123C;
+  --neon-emerald: #047857;
+  --neon-amber: #B45309;
 
-  --grad-h1: linear-gradient(135deg, #0B132B 0%, #0284C7 30%, #6366F1 60%, #E11D48 100%);
-  --grad-h2: linear-gradient(135deg, #0B132B 15%, #0284C7 45%, #7C3AED 75%, #E11D48 100%);
-  --grad-h3: linear-gradient(135deg, #1C2541 15%, #0369A1 48%, #6366F1 78%, #7C3AED 100%);
-  --grad-h4: linear-gradient(135deg, #0284C7 0%, #059669 70%, #047857 100%);
+  /* Cyber Neon Dynamic Heading Gradients (Light Mode) */
+  --grad-h1: linear-gradient(135deg, #0F172A 0%, #0284C7 32%, #4F46E5 62%, #7C3AED 85%, #BE123C 100%);
+  --grad-h2: linear-gradient(135deg, #0F172A 15%, #0284C7 45%, #4F46E5 75%, #7C3AED 100%);
+  --grad-h3: linear-gradient(135deg, #1E293B 15%, #0369A1 48%, #4F46E5 78%, #7C3AED 100%);
+  --grad-h4: linear-gradient(135deg, #0284C7 0%, #047857 70%, #065F46 100%);
 
-  --hl-cyber-neon: linear-gradient(135deg, #0284C7 0%, #4F46E5 30%, #7C3AED 60%, #E11D48 100%);
-  --hl-cyan: linear-gradient(135deg, #0284C7 0%, #2563EB 35%, #7C3AED 100%);
-  --hl-violet: linear-gradient(135deg, #6366F1 0%, #7C3AED 40%, #E11D48 100%);
-  --hl-emerald: linear-gradient(135deg, #0284C7 0%, #059669 45%, #047857 100%);
-  --hl-amber: linear-gradient(135deg, #D97706 0%, #EA580C 40%, #E11D48 100%);
-  --hl-rose: linear-gradient(135deg, #E11D48 0%, #BE123C 45%, #7C3AED 100%);
-  --hl-silver: linear-gradient(135deg, #0B132B 20%, #1C2541 60%, #5B6B8C 100%);
-  --hl-mixed: linear-gradient(135deg, #0284C7 0%, #4F46E5 30%, #7C3AED 65%, #E11D48 100%);
-  --hl-aurora: linear-gradient(120deg, #0284C7 0%, #6366F1 25%, #7C3AED 50%, #E11D48 75%, #059669 100%);
+  /* Cyber Neon Specific Highlight Tokens (Light Mode) */
+  --hl-cyber-neon: linear-gradient(135deg, #0284C7 0%, #2563EB 22%, #4F46E5 45%, #7C3AED 70%, #BE123C 100%);
+  --hl-cyan: linear-gradient(135deg, #0284C7 0%, #2563EB 30%, #4F46E5 68%, #7C3AED 100%);
+  --hl-violet: linear-gradient(135deg, #4F46E5 0%, #7C3AED 35%, #9333EA 70%, #BE123C 100%);
+  --hl-emerald: linear-gradient(135deg, #0284C7 0%, #059669 35%, #047857 70%, #065F46 100%);
+  --hl-amber: linear-gradient(135deg, #D97706 0%, #EA580C 35%, #C2410C 70%, #BE123C 100%);
+  --hl-rose: linear-gradient(135deg, #E11D48 0%, #BE123C 35%, #9F1239 70%, #7C3AED 100%);
+  --hl-silver: linear-gradient(135deg, #0F172A 20%, #1E293B 60%, #475569 100%);
+  --hl-mixed: linear-gradient(135deg, #0284C7 0%, #2563EB 22%, #4F46E5 45%, #7C3AED 68%, #9333EA 88%, #BE123C 100%);
+  --hl-aurora: linear-gradient(120deg, #0284C7 0%, #2563EB 20%, #4F46E5 40%, #7C3AED 60%, #BE123C 80%, #047857 100%);
   --hl-tag-bg: rgba(2, 132, 199, 0.08);
-  --hl-tag-border: rgba(2, 132, 199, 0.32);
+  --hl-tag-border: rgba(2, 132, 199, 0.3);
   --hl-loc-color: #0284C7;
 
+  /* Crisp Light Shadows / Glows - Zero Shadow */
   --text-glow-cyber: none;
   --text-glow-violet: none;
   --text-glow-emerald: none;
   --text-glow-pink: none;
 
-  --shadow-card: 0 8px 24px rgba(11, 19, 43, 0.08);
-  --shadow-hover: 0 16px 38px rgba(2, 132, 199, 0.20);
-}
+  /* Glows */
+  --glow-cyan: 0 2px 12px rgba(2, 132, 199, 0.25);
+  --glow-violet: 0 2px 12px rgba(124, 58, 237, 0.25);
+  --glow-emerald: 0 2px 12px rgba(5, 150, 105, 0.25);
+  --glow-amber: 0 2px 12px rgba(217, 119, 6, 0.25);
+  --text-dim: #94A3B8;
+  --text-accent: var(--c-cyan);
+
+  --switch-bg: #E2E8F0;
   --switch-border: #CBD5E1;
   --switch-active-bg: #FFFFFF;
   --switch-active-text: #0F172A;
@@ -830,17 +836,21 @@ button, .btn-primary, .btn-secondary, .btn-hire, .filter-btn, .theme-mode-btn, .
 .gradient-name.text-gradient-cyan {
   background: linear-gradient(
     105deg,
-    #FFFFFF 0%,
-    #00F5FF 12%,
-    #38BDF8 22%,
-    #B026FF 38%,
-    #FF2A85 54%,
-    #FFB800 68%,
-    #00F5A0 82%,
-    #00F5FF 92%,
-    #FFFFFF 100%
+    #ffffff 0%,
+    #00F2FE 8%,
+    #22D3EE 16%,
+    #818CF8 26%,
+    #A855F7 35%,
+    #EC4899 44%,
+    #F43F5E 52%,
+    #FB923C 60%,
+    #FDE047 67%,
+    #10B981 76%,
+    #38BDF8 85%,
+    #ffffff 92%,
+    #00F2FE 100%
   ) !important;
-  background-size: 350% 350% !important;
+  background-size: 400% 400% !important;
   animation:
     holoShift 4s ease-in-out infinite,
     holoHue   8s linear infinite,
