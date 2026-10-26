@@ -21,9 +21,9 @@ A modern, high-performance, dark/light themed developer portfolio built with:
 ---
 
 ## 🛠️ Tech Stack
-- **Languages & Markup:** HTML5, CSS3, JavaScript (ES6+), PHP
+- **Languages & Frameworks:** HTML5, CSS3, JavaScript (ES6+), React 18, jQuery, PHP
 - **Styling & Frameworks:** Modern CSS3, Bootstrap 5, Flexbox & CSS Grid
-- **Client-Side Dynamics:** Vanilla JavaScript, DOM Manipulation, Event Architecture
+- **Client-Side Dynamics:** React Components, jQuery Animations, Vanilla JavaScript, DOM Manipulation
 - **Backend & Logic:** PHP Server-Side Scripting, Form Processing & Sessions
 - **Tools:** Git, GitHub, Firebase Hosting, VS Code
 

@@ -1845,6 +1845,8 @@ footer strong,
 .fill-yellow { background: linear-gradient(90deg, #F59E0B, #F7DF1E); box-shadow: 0 0 10px rgba(247, 223, 30, 0.45); }
 .fill-teal { background: linear-gradient(90deg, #10B981, #06B6D4); box-shadow: 0 0 10px rgba(16, 185, 129, 0.45); }
 .fill-php { background: linear-gradient(90deg, #777BB4, #8B5CF6); box-shadow: 0 0 10px rgba(119, 123, 180, 0.45); }
+.fill-jquery { background: linear-gradient(90deg, #0769AD, #22A7F0); box-shadow: 0 0 10px rgba(7, 105, 173, 0.45); }
+.fill-react { background: linear-gradient(90deg, #00D8FF, #0077B6); box-shadow: 0 0 10px rgba(0, 216, 255, 0.45); }
 
 /* Skill Category Color Accent Classes */
 .icon-html { background: rgba(227, 79, 38, 0.14) !important; color: #E34F26 !important; border-color: rgba(227, 79, 38, 0.35) !important; }
@@ -1853,6 +1855,8 @@ footer strong,
 .icon-js { background: rgba(247, 223, 30, 0.14) !important; color: #F7DF1E !important; border-color: rgba(247, 223, 30, 0.35) !important; }
 .icon-dom { background: rgba(16, 185, 129, 0.14) !important; color: #10B981 !important; border-color: rgba(16, 185, 129, 0.35) !important; }
 .icon-php { background: rgba(119, 123, 180, 0.14) !important; color: #777BB4 !important; border-color: rgba(119, 123, 180, 0.35) !important; }
+.icon-jquery { background: rgba(7, 105, 173, 0.14) !important; color: #1282D7 !important; border-color: rgba(7, 105, 173, 0.35) !important; }
+.icon-react { background: rgba(0, 216, 255, 0.14) !important; color: #00D8FF !important; border-color: rgba(0, 216, 255, 0.35) !important; }
 
 
 /* â”€â”€â”€ Projects Page & Filter Buttons â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
